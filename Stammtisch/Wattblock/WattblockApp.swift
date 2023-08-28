@@ -1,6 +1,6 @@
 //
-//  StammtischApp.swift
-//  Stammtisch
+//  WattblockApp.swift
+//  Wattblock
 //
 //  Created by Pascal Mönch on 28.07.23.
 //
