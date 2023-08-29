@@ -12,6 +12,15 @@
 		7215BE342A9DCB7700534505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE332A9DCB7700534505 /* Assets.xcassets */; };
 		7215BE372A9DCB7700534505 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE362A9DCB7700534505 /* Preview Assets.xcassets */; };
 		7215BE3E2A9DCB9B00534505 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE3D2A9DCB9B00534505 /* Launch Screen.storyboard */; };
+		7215BE472A9DE5AB00534505 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE462A9DE5AB00534505 /* FirebaseManager.swift */; };
+		7215BE492A9DE5CA00534505 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE482A9DE5CA00534505 /* LoginView.swift */; };
+		7215BE4B2A9DE5D700534505 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE4A2A9DE5D700534505 /* StartView.swift */; };
+		7215BE4D2A9DE5E700534505 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE4C2A9DE5E700534505 /* HomeView.swift */; };
+		7215BE4F2A9DE5F400534505 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE4E2A9DE5F400534505 /* GameView.swift */; };
+		7215BE512A9DE5FF00534505 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE502A9DE5FF00534505 /* SettingsView.swift */; };
+		7215BE532A9DE60E00534505 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE522A9DE60E00534505 /* EditProfileView.swift */; };
+		7215BE552A9DE61C00534505 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE542A9DE61C00534505 /* PlayerView.swift */; };
+		7215BE572A9DE62800534505 /* RuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE562A9DE62800534505 /* RuleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +30,15 @@
 		7215BE332A9DCB7700534505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7215BE362A9DCB7700534505 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7215BE3D2A9DCB9B00534505 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		7215BE462A9DE5AB00534505 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		7215BE482A9DE5CA00534505 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7215BE4A2A9DE5D700534505 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		7215BE4C2A9DE5E700534505 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7215BE4E2A9DE5F400534505 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		7215BE502A9DE5FF00534505 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7215BE522A9DE60E00534505 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		7215BE542A9DE61C00534505 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		7215BE562A9DE62800534505 /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +71,11 @@
 		7215BE2E2A9DCB7600534505 /* Wattblock */ = {
 			isa = PBXGroup;
 			children = (
+				7215BE432A9DE57200534505 /* Models */,
+				7215BE422A9DE56A00534505 /* Repositories */,
+				7215BE412A9DE56100534505 /* ViewModels */,
+				7215BE402A9DE55900534505 /* Views */,
+				7215BE3F2A9DE54E00534505 /* Managers */,
 				7215BE2F2A9DCB7600534505 /* WattblockApp.swift */,
 				7215BE312A9DCB7600534505 /* ContentView.swift */,
 				7215BE332A9DCB7700534505 /* Assets.xcassets */,
@@ -68,6 +91,66 @@
 				7215BE362A9DCB7700534505 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7215BE3F2A9DE54E00534505 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7215BE462A9DE5AB00534505 /* FirebaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7215BE402A9DE55900534505 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7215BE452A9DE59800534505 /* Components */,
+				7215BE482A9DE5CA00534505 /* LoginView.swift */,
+				7215BE4A2A9DE5D700534505 /* StartView.swift */,
+				7215BE4C2A9DE5E700534505 /* HomeView.swift */,
+				7215BE4E2A9DE5F400534505 /* GameView.swift */,
+				7215BE502A9DE5FF00534505 /* SettingsView.swift */,
+				7215BE522A9DE60E00534505 /* EditProfileView.swift */,
+				7215BE542A9DE61C00534505 /* PlayerView.swift */,
+				7215BE562A9DE62800534505 /* RuleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7215BE412A9DE56100534505 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7215BE422A9DE56A00534505 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7215BE432A9DE57200534505 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7215BE442A9DE57E00534505 /* Enums */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7215BE442A9DE57E00534505 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		7215BE452A9DE59800534505 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +224,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7215BE532A9DE60E00534505 /* EditProfileView.swift in Sources */,
+				7215BE472A9DE5AB00534505 /* FirebaseManager.swift in Sources */,
+				7215BE512A9DE5FF00534505 /* SettingsView.swift in Sources */,
+				7215BE552A9DE61C00534505 /* PlayerView.swift in Sources */,
+				7215BE4B2A9DE5D700534505 /* StartView.swift in Sources */,
+				7215BE572A9DE62800534505 /* RuleView.swift in Sources */,
 				7215BE322A9DCB7600534505 /* ContentView.swift in Sources */,
+				7215BE4D2A9DE5E700534505 /* HomeView.swift in Sources */,
+				7215BE492A9DE5CA00534505 /* LoginView.swift in Sources */,
 				7215BE302A9DCB7600534505 /* WattblockApp.swift in Sources */,
+				7215BE4F2A9DE5F400534505 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +372,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,7 +407,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

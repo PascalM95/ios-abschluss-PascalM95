@@ -23,22 +23,23 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="IeD-1E-InA">
-                                <rect key="frame" x="31" y="137" width="331" height="579"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="mi1-gz-c8F">
+                                <rect key="frame" x="55" y="111" width="283" height="630"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="341" id="Jns-UN-iZL"/>
-                                    <constraint firstAttribute="height" constant="585" id="c0t-MP-yeN"/>
+                                    <constraint firstAttribute="height" constant="630" id="AeE-3e-6Hb"/>
+                                    <constraint firstAttribute="width" constant="283" id="sVk-wy-7Oe"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IeD-1E-InA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4Wn-P4-Ofg"/>
+                            <constraint firstItem="mi1-gz-c8F" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2NW-kW-xPv"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
+                            <constraint firstItem="mi1-gz-c8F" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SXD-2y-GfL"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
-                            <constraint firstItem="IeD-1E-InA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="p5x-gx-B4H"/>
                         </constraints>
                     </view>
                 </viewController>
