@@ -71,9 +71,9 @@
 		7215BE2E2A9DCB7600534505 /* Wattblock */ = {
 			isa = PBXGroup;
 			children = (
-				7215BE432A9DE57200534505 /* Models */,
-				7215BE422A9DE56A00534505 /* Repositories */,
-				7215BE412A9DE56100534505 /* ViewModels */,
+				7238EC4B2A9E0E800018EB47 /* Models */,
+				7238EC4D2A9E0E8E0018EB47 /* Repositories */,
+				7238EC4C2A9E0E870018EB47 /* ViewModels */,
 				7215BE402A9DE55900534505 /* Views */,
 				7215BE3F2A9DE54E00534505 /* Managers */,
 				7215BE2F2A9DCB7600534505 /* WattblockApp.swift */,
@@ -104,7 +104,7 @@
 		7215BE402A9DE55900534505 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7215BE452A9DE59800534505 /* Components */,
+				7238EC4F2A9E0EAB0018EB47 /* Components */,
 				7215BE482A9DE5CA00534505 /* LoginView.swift */,
 				7215BE4A2A9DE5D700534505 /* StartView.swift */,
 				7215BE4C2A9DE5E700534505 /* HomeView.swift */,
@@ -117,36 +117,36 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		7215BE412A9DE56100534505 /* ViewModels */ = {
+		7238EC4B2A9E0E800018EB47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7238EC4E2A9E0E980018EB47 /* Enums */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7238EC4C2A9E0E870018EB47 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		7215BE422A9DE56A00534505 /* Repositories */ = {
+		7238EC4D2A9E0E8E0018EB47 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		7215BE432A9DE57200534505 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				7215BE442A9DE57E00534505 /* Enums */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		7215BE442A9DE57E00534505 /* Enums */ = {
+		7238EC4E2A9E0E980018EB47 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		7215BE452A9DE59800534505 /* Components */ = {
+		7238EC4F2A9E0EAB0018EB47 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 			);
