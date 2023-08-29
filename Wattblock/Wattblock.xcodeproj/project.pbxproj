@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7215BE302A9DCB7600534505 /* WattblockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE2F2A9DCB7600534505 /* WattblockApp.swift */; };
-		7215BE322A9DCB7600534505 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE312A9DCB7600534505 /* ContentView.swift */; };
 		7215BE342A9DCB7700534505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE332A9DCB7700534505 /* Assets.xcassets */; };
 		7215BE372A9DCB7700534505 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE362A9DCB7700534505 /* Preview Assets.xcassets */; };
 		7215BE3E2A9DCB9B00534505 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE3D2A9DCB9B00534505 /* Launch Screen.storyboard */; };
@@ -21,12 +20,12 @@
 		7215BE532A9DE60E00534505 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE522A9DE60E00534505 /* EditProfileView.swift */; };
 		7215BE552A9DE61C00534505 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE542A9DE61C00534505 /* PlayerView.swift */; };
 		7215BE572A9DE62800534505 /* RuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE562A9DE62800534505 /* RuleView.swift */; };
+		7238EC512A9E0F360018EB47 /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7238EC502A9E0F360018EB47 /* OutlinedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7215BE2C2A9DCB7600534505 /* Wattblock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wattblock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7215BE2F2A9DCB7600534505 /* WattblockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WattblockApp.swift; sourceTree = "<group>"; };
-		7215BE312A9DCB7600534505 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7215BE332A9DCB7700534505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7215BE362A9DCB7700534505 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7215BE3D2A9DCB9B00534505 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -39,6 +38,7 @@
 		7215BE522A9DE60E00534505 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		7215BE542A9DE61C00534505 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		7215BE562A9DE62800534505 /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
+		7238EC502A9E0F360018EB47 /* OutlinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +71,12 @@
 		7215BE2E2A9DCB7600534505 /* Wattblock */ = {
 			isa = PBXGroup;
 			children = (
+				7215BE2F2A9DCB7600534505 /* WattblockApp.swift */,
 				7238EC4B2A9E0E800018EB47 /* Models */,
 				7238EC4D2A9E0E8E0018EB47 /* Repositories */,
 				7238EC4C2A9E0E870018EB47 /* ViewModels */,
 				7215BE402A9DE55900534505 /* Views */,
 				7215BE3F2A9DE54E00534505 /* Managers */,
-				7215BE2F2A9DCB7600534505 /* WattblockApp.swift */,
-				7215BE312A9DCB7600534505 /* ContentView.swift */,
 				7215BE332A9DCB7700534505 /* Assets.xcassets */,
 				7215BE3D2A9DCB9B00534505 /* Launch Screen.storyboard */,
 				7215BE352A9DCB7700534505 /* Preview Content */,
@@ -149,6 +148,7 @@
 		7238EC4F2A9E0EAB0018EB47 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				7238EC502A9E0F360018EB47 /* OutlinedButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -230,11 +230,11 @@
 				7215BE552A9DE61C00534505 /* PlayerView.swift in Sources */,
 				7215BE4B2A9DE5D700534505 /* StartView.swift in Sources */,
 				7215BE572A9DE62800534505 /* RuleView.swift in Sources */,
-				7215BE322A9DCB7600534505 /* ContentView.swift in Sources */,
 				7215BE4D2A9DE5E700534505 /* HomeView.swift in Sources */,
 				7215BE492A9DE5CA00534505 /* LoginView.swift in Sources */,
 				7215BE302A9DCB7600534505 /* WattblockApp.swift in Sources */,
 				7215BE4F2A9DE5F400534505 /* GameView.swift in Sources */,
+				7238EC512A9E0F360018EB47 /* OutlinedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
