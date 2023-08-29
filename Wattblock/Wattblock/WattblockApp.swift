@@ -2,13 +2,13 @@
 //  WattblockApp.swift
 //  Wattblock
 //
-//  Created by Pascal Mönch on 28.07.23.
+//  Created by Pascal Mönch on 29.08.23.
 //
 
 import SwiftUI
 
 @main
-struct StammtischApp: App {
+struct WattblockApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

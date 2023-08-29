@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "stammtisch_logo_light.png",
+      "filename" : "wattblock_logo_light.png",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "stammtisch_logo_dark.png",
+      "filename" : "wattblock_logo_dark.png",
       "idiom" : "universal"
     }
   ],
