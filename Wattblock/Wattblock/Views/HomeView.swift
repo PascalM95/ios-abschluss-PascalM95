@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Button("Abmelden", action: userViewModel.logout)
     }
+    
+    
+    
+    // MARK: - Variables
+    
+    @StateObject var userViewModel = UserViewModel()
+    
 }
 
 struct HomeView_Previews: PreviewProvider {

@@ -15,14 +15,15 @@ class AuthenticationViewModel: ObservableObject {
     
     @Published var authMode: AuthenticationMode = .login
     @Published var email = ""
-    @Published var password = ""
+    @Published var password1 = ""
+    @Published var password2 = ""
     
     
     
     // MARK: - Computed Properties
     
     var disableAuth: Bool {
-        email.isEmpty || password.isEmpty
+        email.isEmpty || password1.isEmpty || password2.isEmpty || password1 != password2
     }
     
     
@@ -36,9 +37,9 @@ class AuthenticationViewModel: ObservableObject {
     func authenticate() {
         switch authMode {
         case .login:
-            userRepository.login(email: email, password: password)
+            userRepository.login(email: email, password: password1)
         case .register:
-            userRepository.register(email: email, password: password)
+            userRepository.register(email: email, password: password1)
         }
     }
 }

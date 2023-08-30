@@ -24,14 +24,14 @@ struct LoginView: View {
                 }
                 
                 ZStack(alignment: .bottom) {
-                    SecureField("Passwort", text: $authenticationViewModel.password)
+                    SecureField("Passwort", text: $authenticationViewModel.password1)
                         .frame(minHeight: 36)
                     Divider()
                 }
                 
                 if authenticationViewModel.authMode == .register {
                     ZStack(alignment: .bottom) {
-                        SecureField("Passwort wiederholen", text: $authenticationViewModel.password)
+                        SecureField("Passwort wiederholen", text: $authenticationViewModel.password2)
                             .frame(minHeight: 36)
                         Divider()
                     }
@@ -44,6 +44,7 @@ struct LoginView: View {
             
             OutlinedButton(title: authenticationViewModel.authMode.title, action: authenticationViewModel.authenticate)
                 .padding(.horizontal, Values.padding24)
+                .disabled(authenticationViewModel.disableAuth)
             
             TextButton(title: authenticationViewModel.authMode.alternativeTitle, action: authenticationViewModel.switchAuthMode)
             
