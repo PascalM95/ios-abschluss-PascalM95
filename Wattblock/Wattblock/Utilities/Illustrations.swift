@@ -5,4 +5,9 @@
 //  Created by Pascal Mönch on 30.08.23.
 //
 
-import Foundation
+import SwiftUI
+
+enum Illustrations {
+    
+    static let logo = Image("wattblock_logo")
+}

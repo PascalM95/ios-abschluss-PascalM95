@@ -10,4 +10,5 @@ import SwiftUI
 enum Colors {
     static let bavarianBlue = Color("BavarianBlue")
     static let accentColor = Color("AccentColor")
+    static let authColor = Color("authColor")
 }

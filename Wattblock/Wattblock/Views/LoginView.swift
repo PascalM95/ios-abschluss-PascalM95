@@ -8,21 +8,54 @@
 import SwiftUI
 
 struct LoginView: View {
+    
     var body: some View {
-        VStack {
-            Image("wattblock_logo")
+        VStack(spacing: 0) {
+            Illustrations.logo
                 .resizable()
                 .scaledToFit()
-                .padding(50)
-            OutlinedButton()
-                .padding(.horizontal)
-            Divider()
-                .padding(.horizontal)
-            OutlinedButton()
-                .padding(.horizontal)
+                .padding(.horizontal, Values.padding40)
+            
+            VStack(spacing: Values.spacing12) {
+                ZStack(alignment: .bottom) {
+                    TextField("E-Mail", text: $authenticationViewModel.email)
+                        .frame(minHeight: 36)
+                    Divider()
+                }
+                
+                ZStack(alignment: .bottom) {
+                    SecureField("Passwort", text: $authenticationViewModel.password)
+                        .frame(minHeight: 36)
+                    Divider()
+                }
+                
+                if authenticationViewModel.authMode == .register {
+                    ZStack(alignment: .bottom) {
+                        SecureField("Passwort wiederholen", text: $authenticationViewModel.password)
+                            .frame(minHeight: 36)
+                        Divider()
+                    }
+                }
+            }
+            .font(.headline)
+            .textInputAutocapitalization(.never)
+            .padding([.horizontal, .top], Values.padding40)
+            .padding(.bottom, Values.padding16)
+            
+            OutlinedButton(title: authenticationViewModel.authMode.title, action: authenticationViewModel.authenticate)
+                .padding(.horizontal, Values.padding24)
+            
+            TextButton(title: authenticationViewModel.authMode.alternativeTitle, action: authenticationViewModel.switchAuthMode)
+            
         }
-        
     }
+    
+    
+    
+    // MARK: - Variables
+    
+    @StateObject private var authenticationViewModel = AuthenticationViewModel()
+    
 }
 
 struct LoginView_Previews: PreviewProvider {
