@@ -9,8 +9,19 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        OutlinedButton()
-            .padding()
+        VStack {
+            Image("wattblock_logo")
+                .resizable()
+                .scaledToFit()
+                .padding(50)
+            OutlinedButton()
+                .padding(.horizontal)
+            Divider()
+                .padding(.horizontal)
+            OutlinedButton()
+                .padding(.horizontal)
+        }
+        
     }
 }
 
