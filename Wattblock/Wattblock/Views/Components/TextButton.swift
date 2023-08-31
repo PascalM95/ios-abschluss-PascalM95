@@ -16,6 +16,7 @@ struct TextButton: View {
                 .foregroundColor(Colors.authColor)
                 .frame(maxWidth: .infinity)
         }
+        .padding(Values.padding8)
     }
     
     

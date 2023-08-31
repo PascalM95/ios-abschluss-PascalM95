@@ -11,19 +11,51 @@ struct HomeView: View {
     
     var body: some View {
         
-        Button("Abmelden", action: userViewModel.logout)
+        NavigationStack {
+            
+            ZStack {
+                Colors.bavarianBlue
+                    .edgesIgnoringSafeArea(.all)
+                Colors.background
+                
+                VStack {
+                    Spacer()
+                    OutlinedIconButton(icon: Illustrations.acorn, title: Strings.vs1, action: {})
+                        .padding(.horizontal, Values.padding24)
+                    
+                    OutlinedIconButton(icon: Illustrations.grass, title: Strings.vs2, action: {})
+                        .padding(.horizontal, Values.padding24)
+                    
+                    OutlinedIconButton(icon: Illustrations.heart, title: Strings.stats, action: {})
+                        .padding(.horizontal, Values.padding24)
+                    
+                    OutlinedIconButton(icon: Illustrations.bell, title: Strings.players, action: {})
+                        .padding(.horizontal, Values.padding24)
+                    
+                    OutlinedIconButton(icon: Illustrations.acorn, title: Strings.rules, action: {})
+                        .padding(.horizontal, Values.padding24)
+                    Spacer()
+                    
+                    Button("Abmelden", action: userViewModel.logout)
+                        .foregroundColor(.red)
+                    Spacer()
+                }
+                .navigationTitle(Strings.appName).toolbarBackground(Colors.bavarianBlue, for: .navigationBar)
+            }
+        }
     }
     
     
     
     // MARK: - Variables
     
-    @StateObject var userViewModel = UserViewModel()
+    @EnvironmentObject var userViewModel: UserViewModel
     
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(UserViewModel())
     }
 }

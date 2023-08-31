@@ -23,7 +23,13 @@ class AuthenticationViewModel: ObservableObject {
     // MARK: - Computed Properties
     
     var disableAuth: Bool {
-        email.isEmpty || password1.isEmpty || password2.isEmpty || password1 != password2
+        if authMode == .login && (email.isEmpty || password1.isEmpty){
+            return true
+        } else if authMode == .register && (email.isEmpty || password1.isEmpty || password2.isEmpty || password1 != password2) {
+            return true
+        } else {
+            return false
+        }
     }
     
     

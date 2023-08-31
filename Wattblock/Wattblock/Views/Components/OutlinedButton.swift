@@ -18,7 +18,7 @@ struct OutlinedButton: View {
         .padding(.vertical, Values.padding16)
         .border(Colors.bavarianBlue, width: Values.borderWidth)
         .cornerRadius(Values.cornerRadius)
-        .padding()
+        .padding([.horizontal, .top], Values.padding16)
     }
     
     

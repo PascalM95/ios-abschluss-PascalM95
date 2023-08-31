@@ -1,19 +1,19 @@
 //
-//  TextFieldAuth.swift
+//  SecureFieldAuth.swift
 //  Wattblock
 //
-//  Created by Pascal Mönch on 30.08.23.
+//  Created by Pascal Mönch on 31.08.23.
 //
 
 import SwiftUI
 
-struct TextFieldAuth: View {
+struct SecureFieldAuth: View {
     
     var body: some View {
         HStack {
             icon
                 .foregroundColor(Colors.accentColor)
-            TextField(text, text: $inputText)
+            SecureField(text, text: $inputText)
         }
         .padding()
         .overlay(
@@ -31,8 +31,8 @@ struct TextFieldAuth: View {
     @Binding var inputText: String
 }
 
-struct TextFieldAuth_Previews: PreviewProvider {
+struct SecureFieldAuth_Previews: PreviewProvider {
     static var previews: some View {
-        TextFieldAuth(icon: SFSymbols.email, text: "E-Mail", inputText: .constant(""))
+        SecureFieldAuth(icon: SFSymbols.email, text: "Passwort", inputText: .constant(""))
     }
 }

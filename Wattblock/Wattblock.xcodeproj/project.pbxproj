@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720CFA0A2AA0925300FF372F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA092AA0925300FF372F /* Strings.swift */; };
+		720CFA0C2AA095A800FF372F /* OutlinedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA0B2AA095A800FF372F /* OutlinedIconButton.swift */; };
+		720CFA0E2AA0AEE700FF372F /* SecureFieldAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA0D2AA0AEE700FF372F /* SecureFieldAuth.swift */; };
 		7215BE302A9DCB7600534505 /* WattblockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE2F2A9DCB7600534505 /* WattblockApp.swift */; };
 		7215BE342A9DCB7700534505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE332A9DCB7700534505 /* Assets.xcassets */; };
 		7215BE372A9DCB7700534505 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE362A9DCB7700534505 /* Preview Assets.xcassets */; };
 		7215BE3E2A9DCB9B00534505 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE3D2A9DCB9B00534505 /* Launch Screen.storyboard */; };
 		7215BE472A9DE5AB00534505 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE462A9DE5AB00534505 /* FirebaseManager.swift */; };
 		7215BE492A9DE5CA00534505 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE482A9DE5CA00534505 /* LoginView.swift */; };
-		7215BE4B2A9DE5D700534505 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE4A2A9DE5D700534505 /* StartView.swift */; };
 		7215BE4D2A9DE5E700534505 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE4C2A9DE5E700534505 /* HomeView.swift */; };
 		7215BE4F2A9DE5F400534505 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE4E2A9DE5F400534505 /* GameView.swift */; };
 		7215BE512A9DE5FF00534505 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE502A9DE5FF00534505 /* SettingsView.swift */; };
@@ -42,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		720CFA092AA0925300FF372F /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		720CFA0B2AA095A800FF372F /* OutlinedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedIconButton.swift; sourceTree = "<group>"; };
+		720CFA0D2AA0AEE700FF372F /* SecureFieldAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldAuth.swift; sourceTree = "<group>"; };
 		7215BE2C2A9DCB7600534505 /* Wattblock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wattblock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7215BE2F2A9DCB7600534505 /* WattblockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WattblockApp.swift; sourceTree = "<group>"; };
 		7215BE332A9DCB7700534505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,7 +54,6 @@
 		7215BE3D2A9DCB9B00534505 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7215BE462A9DE5AB00534505 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		7215BE482A9DE5CA00534505 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		7215BE4A2A9DE5D700534505 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		7215BE4C2A9DE5E700534505 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7215BE4E2A9DE5F400534505 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		7215BE502A9DE5FF00534505 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -143,7 +147,6 @@
 			children = (
 				7238EC4F2A9E0EAB0018EB47 /* Components */,
 				7215BE482A9DE5CA00534505 /* LoginView.swift */,
-				7215BE4A2A9DE5D700534505 /* StartView.swift */,
 				7215BE4C2A9DE5E700534505 /* HomeView.swift */,
 				7215BE4E2A9DE5F400534505 /* GameView.swift */,
 				7215BE502A9DE5FF00534505 /* SettingsView.swift */,
@@ -194,6 +197,8 @@
 				7238EC502A9E0F360018EB47 /* OutlinedButton.swift */,
 				723CD40E2A9F488A005CAD6B /* TextFieldAuth.swift */,
 				723CD4212A9F6AE2005CAD6B /* TextButton.swift */,
+				720CFA0B2AA095A800FF372F /* OutlinedIconButton.swift */,
+				720CFA0D2AA0AEE700FF372F /* SecureFieldAuth.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				723CD4192A9F5F5F005CAD6B /* Illustrations.swift */,
 				723CD41B2A9F6045005CAD6B /* Values.swift */,
 				723CD41D2A9F6138005CAD6B /* Fonts.swift */,
+				720CFA092AA0925300FF372F /* Strings.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 				7215BE282A9DCB7600534505 /* Sources */,
 				7215BE292A9DCB7600534505 /* Frameworks */,
 				7215BE2A2A9DCB7600534505 /* Resources */,
+				720CFA082AA087FC00FF372F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -295,6 +302,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		720CFA082AA087FC00FF372F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"$(SRCROOT)/${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"$(SRCROOT)/${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7215BE282A9DCB7600534505 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -309,10 +342,12 @@
 				723CD4112A9F48C0005CAD6B /* AuthenticationViewModel.swift in Sources */,
 				7215BE512A9DE5FF00534505 /* SettingsView.swift in Sources */,
 				723CD41E2A9F6138005CAD6B /* Fonts.swift in Sources */,
+				720CFA0E2AA0AEE700FF372F /* SecureFieldAuth.swift in Sources */,
 				723CD41C2A9F6045005CAD6B /* Values.swift in Sources */,
+				720CFA0C2AA095A800FF372F /* OutlinedIconButton.swift in Sources */,
+				720CFA0A2AA0925300FF372F /* Strings.swift in Sources */,
 				723CD4242A9F6F6C005CAD6B /* UserViewModel.swift in Sources */,
 				7215BE552A9DE61C00534505 /* PlayerView.swift in Sources */,
-				7215BE4B2A9DE5D700534505 /* StartView.swift in Sources */,
 				7215BE572A9DE62800534505 /* RuleView.swift in Sources */,
 				723CD4162A9F5F02005CAD6B /* SFSymbols.swift in Sources */,
 				723CD40F2A9F488A005CAD6B /* TextFieldAuth.swift in Sources */,
@@ -450,6 +485,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Wattblock/Preview Content\"";
 				DEVELOPMENT_TEAM = 2BVXDVW7D8;
 				ENABLE_PREVIEWS = YES;
@@ -485,6 +521,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Wattblock/Preview Content\"";
 				DEVELOPMENT_TEAM = 2BVXDVW7D8;
 				ENABLE_PREVIEWS = YES;

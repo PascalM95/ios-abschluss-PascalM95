@@ -10,44 +10,38 @@ import SwiftUI
 struct LoginView: View {
     
     var body: some View {
-        VStack(spacing: 0) {
-            Illustrations.logo
-                .resizable()
-                .scaledToFit()
-                .padding(.horizontal, Values.padding40)
-            
-            VStack(spacing: Values.spacing12) {
-                ZStack(alignment: .bottom) {
-                    TextField("E-Mail", text: $authenticationViewModel.email)
-                        .frame(minHeight: 36)
-                    Divider()
-                }
+        ZStack {
+            Colors.bavarianBlue
+                .edgesIgnoringSafeArea(.all)
+            Colors.background
+            VStack(spacing: 0) {
+                Illustrations.logo
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.horizontal, Values.padding40)
                 
-                ZStack(alignment: .bottom) {
-                    SecureField("Passwort", text: $authenticationViewModel.password1)
-                        .frame(minHeight: 36)
-                    Divider()
-                }
-                
-                if authenticationViewModel.authMode == .register {
-                    ZStack(alignment: .bottom) {
-                        SecureField("Passwort wiederholen", text: $authenticationViewModel.password2)
-                            .frame(minHeight: 36)
-                        Divider()
+                VStack(spacing: Values.spacing12) {
+                    
+                    TextFieldAuth(icon: SFSymbols.email, text: Strings.email, inputText: $authenticationViewModel.email)
+                    
+                    SecureFieldAuth(icon: SFSymbols.lock, text: Strings.password, inputText: $authenticationViewModel.password1)
+                    
+                    if authenticationViewModel.authMode == .register {
+                        SecureFieldAuth(icon: SFSymbols.lock, text: Strings.repeatPassword, inputText: $authenticationViewModel.password2)
                     }
                 }
+                .font(.headline)
+                .textInputAutocapitalization(.never)
+                .padding([.horizontal, .top], Values.padding40)
+                .padding(.bottom, Values.padding16)
+                
+                OutlinedButton(title: authenticationViewModel.authMode.title, action: authenticationViewModel.authenticate)
+                    .padding(.horizontal, Values.padding24)
+                    .disabled(authenticationViewModel.disableAuth)
+                
+                TextButton(title: authenticationViewModel.authMode.alternativeTitle, action: authenticationViewModel.switchAuthMode)
             }
-            .font(.headline)
-            .textInputAutocapitalization(.never)
-            .padding([.horizontal, .top], Values.padding40)
-            .padding(.bottom, Values.padding16)
-            
-            OutlinedButton(title: authenticationViewModel.authMode.title, action: authenticationViewModel.authenticate)
-                .padding(.horizontal, Values.padding24)
-                .disabled(authenticationViewModel.disableAuth)
-            
-            TextButton(title: authenticationViewModel.authMode.alternativeTitle, action: authenticationViewModel.switchAuthMode)
-            
+            .padding(.bottom, Values.padding40)
         }
     }
     

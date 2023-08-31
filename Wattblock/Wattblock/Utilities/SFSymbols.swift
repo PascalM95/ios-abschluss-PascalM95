@@ -12,4 +12,6 @@ enum SFSymbols {
     static let plus = Image(systemName: "plus")
     static let email = Image(systemName: "envelope")
     static let emailFill = Image(systemName: "envelope.fill")
+    static let lock = Image(systemName: "lock")
+    static let lockFill = Image(systemName: "lock.fill")
 }
