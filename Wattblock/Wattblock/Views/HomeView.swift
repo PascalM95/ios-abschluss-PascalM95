@@ -15,7 +15,7 @@ struct HomeView: View {
             
             ZStack {
                 Colors.bavarianBlue
-                    .edgesIgnoringSafeArea(.all)
+                    .edgesIgnoringSafeArea(.top)
                 Colors.background
                 
                 VStack {

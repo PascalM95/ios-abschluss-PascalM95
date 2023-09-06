@@ -11,6 +11,7 @@ struct Values {
     static let cornerRadius: CGFloat = 4
     static let cornerSettings: CGFloat = 10
     
+    static let padding4: CGFloat = 4
     static let padding8: CGFloat = 8
     static let padding12: CGFloat = 12
     static let padding16: CGFloat = 16

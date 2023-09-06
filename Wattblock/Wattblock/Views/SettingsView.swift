@@ -13,7 +13,7 @@ struct SettingsView: View {
         NavigationStack {
             ZStack {
                 Colors.bavarianBlue
-                    .edgesIgnoringSafeArea(.all)
+                    .edgesIgnoringSafeArea(.top)
                 Colors.backgroundSettings
                 VStack {
                     Form {
@@ -43,8 +43,8 @@ struct SettingsView: View {
                             .foregroundColor(.red)
                     }
                 }
-                .navigationBarTitle(Strings.settings)
-                .padding(.top)
+                .navigationTitle(Strings.settings)
+                .padding(.top, Values.padding4)
             }
             .sheet(isPresented: $showProfileSheet) {
                 EditProfileView()

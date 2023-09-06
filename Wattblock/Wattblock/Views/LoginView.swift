@@ -12,7 +12,7 @@ struct LoginView: View {
     var body: some View {
         ZStack {
             Colors.bavarianBlue
-                .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.top)
             Colors.background
             VStack(spacing: 0) {
                 Illustrations.logo
