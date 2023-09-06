@@ -12,4 +12,6 @@ enum Colors {
     static let accentColor = Color("AccentColor")
     static let authColor = Color("authColor")
     static let background = Color("BackgroundColor")
+    static let backgroundSettings = Color("backgroundSettings")
+    static let settingRow = Color("settingRow")
 }

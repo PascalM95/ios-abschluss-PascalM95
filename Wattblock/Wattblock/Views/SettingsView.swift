@@ -11,33 +11,45 @@ struct SettingsView: View {
     
     var body: some View {
         NavigationStack {
-            Form {
-                Section {
-                    Button {
-                        self.showProfileSheet.toggle()
-                    } label: {
-                        HStack {
-                            SFSymbols.personCircle
-                            Text(Strings.profile)
+            ZStack {
+                Colors.bavarianBlue
+                    .edgesIgnoringSafeArea(.all)
+                Colors.backgroundSettings
+                VStack {
+                    Form {
+//                    SettingRow(title: Strings.profile)
+//                    SettingRow(title: Strings.general)
+//                    Spacer()
+                        Section {
+                            Button {
+                                self.showProfileSheet.toggle()
+                            } label: {
+                                HStack {
+                                    SFSymbols.personCircle
+                                    Text(Strings.profile)
+                                }
+                            }
                         }
+                        
+                        Section {
+                            
+                        }
+                        
+                        Section {
+                            
+                        }
+                        
+                        Button(Strings.signOut, action: userViewModel.logout)
+                            .foregroundColor(.red)
                     }
                 }
-                
-                Section {
-                    
-                }
-                
-                Section {
-                    
-                }
-                
-                Button(Strings.signOut, action: userViewModel.logout)
-                    .foregroundColor(.red)
+                .navigationBarTitle(Strings.settings)
+                .padding(.top)
             }
-            .navigationTitle(Strings.settings)
-        }
-        .sheet(isPresented: $showProfileSheet) {
-            EditProfileView()
+            .sheet(isPresented: $showProfileSheet) {
+                EditProfileView()
+            }
+            
         }
     }
     
