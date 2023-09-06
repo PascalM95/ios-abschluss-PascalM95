@@ -15,11 +15,13 @@ struct Values {
     static let padding24: CGFloat = 24
     static let padding32: CGFloat = 32
     static let padding40: CGFloat = 40
+    static let padding50: CGFloat = 50
     
     static let iconSize: CGFloat = 16
     static let iconSizeLarge: CGFloat = 18
     static let iconFrame: CGFloat = 50
     static let textFrameH: CGFloat = 36
+    static let logoFrameSize: CGFloat = 280
     
     static let borderWidth: CGFloat = 2
     

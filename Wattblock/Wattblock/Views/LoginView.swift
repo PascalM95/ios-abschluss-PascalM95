@@ -17,8 +17,9 @@ struct LoginView: View {
             VStack(spacing: 0) {
                 Illustrations.logo
                     .resizable()
+                    .frame(width: Values.logoFrameSize, height: Values.logoFrameSize)
                     .scaledToFit()
-                    .padding(.horizontal, Values.padding40)
+                    .padding(Values.padding24)
                 
                 VStack(spacing: Values.spacing12) {
                     
@@ -32,11 +33,11 @@ struct LoginView: View {
                 }
                 .font(.headline)
                 .textInputAutocapitalization(.never)
-                .padding([.horizontal, .top], Values.padding40)
+                .padding([.horizontal, .top], Values.padding50)
                 .padding(.bottom, Values.padding16)
                 
                 OutlinedButton(title: authenticationViewModel.authMode.title, action: authenticationViewModel.authenticate)
-                    .padding(.horizontal, Values.padding24)
+                    .padding(.horizontal, Values.padding40)
                     .disabled(authenticationViewModel.disableAuth)
                 
                 TextButton(title: authenticationViewModel.authMode.alternativeTitle, action: authenticationViewModel.switchAuthMode)

@@ -19,7 +19,10 @@ struct HomeView: View {
                 Colors.background
                 
                 VStack {
+                    NavigationTitle(title: Strings.appName)
+                    
                     Spacer()
+                    
                     OutlinedIconButton(icon: Illustrations.acorn, title: Strings.vs1, action: {})
                         .padding(.horizontal, Values.padding24)
                     
@@ -34,13 +37,10 @@ struct HomeView: View {
                     
                     OutlinedIconButton(icon: Illustrations.acorn, title: Strings.rules, action: {})
                         .padding(.horizontal, Values.padding24)
-                    Spacer()
                     
-                    Button("Abmelden", action: userViewModel.logout)
-                        .foregroundColor(.red)
+                    Spacer()
                     Spacer()
                 }
-                .navigationTitle(Strings.appName).toolbarBackground(Colors.bavarianBlue, for: .navigationBar)
             }
         }
     }
