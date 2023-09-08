@@ -10,23 +10,28 @@ import SwiftUI
 struct OutlinedButton: View {
     
     var body: some View {
-        Button {
-            print("Platzhalter")
-        } label: {
-            Text("Anmelden")
+        Button(action: action) {
+            Text(title)
                 .font(.headline)
                 .frame(maxWidth: .infinity)
         }
-        .padding()
-        .border(Color("BavarianBlue"), width: 1)
-        .cornerRadius(4)
-        .padding()
+        .padding(.vertical, Values.padding16)
+        .border(Colors.bavarianBlue, width: Values.borderWidth)
+        .cornerRadius(Values.cornerRadius)
+        .padding([.horizontal, .top], Values.padding16)
     }
+    
+    
+    
+    // MARK: - Variables
+    
+    let title: String
+    let action: () -> Void
     
 }
 
 struct OutlinedButton_Previews: PreviewProvider {
     static var previews: some View {
-        OutlinedButton()
+        OutlinedButton(title: "Anmelden") { }
     }
 }

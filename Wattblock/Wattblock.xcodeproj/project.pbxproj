@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720CFA0A2AA0925300FF372F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA092AA0925300FF372F /* Strings.swift */; };
+		720CFA0C2AA095A800FF372F /* OutlinedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA0B2AA095A800FF372F /* OutlinedIconButton.swift */; };
+		720CFA0E2AA0AEE700FF372F /* SecureFieldAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA0D2AA0AEE700FF372F /* SecureFieldAuth.swift */; };
 		7215BE302A9DCB7600534505 /* WattblockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE2F2A9DCB7600534505 /* WattblockApp.swift */; };
 		7215BE342A9DCB7700534505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE332A9DCB7700534505 /* Assets.xcassets */; };
 		7215BE372A9DCB7700534505 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE362A9DCB7700534505 /* Preview Assets.xcassets */; };
 		7215BE3E2A9DCB9B00534505 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7215BE3D2A9DCB9B00534505 /* Launch Screen.storyboard */; };
 		7215BE472A9DE5AB00534505 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE462A9DE5AB00534505 /* FirebaseManager.swift */; };
 		7215BE492A9DE5CA00534505 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE482A9DE5CA00534505 /* LoginView.swift */; };
-		7215BE4B2A9DE5D700534505 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE4A2A9DE5D700534505 /* StartView.swift */; };
 		7215BE4D2A9DE5E700534505 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE4C2A9DE5E700534505 /* HomeView.swift */; };
 		7215BE4F2A9DE5F400534505 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE4E2A9DE5F400534505 /* GameView.swift */; };
 		7215BE512A9DE5FF00534505 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE502A9DE5FF00534505 /* SettingsView.swift */; };
@@ -21,6 +23,19 @@
 		7215BE552A9DE61C00534505 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE542A9DE61C00534505 /* PlayerView.swift */; };
 		7215BE572A9DE62800534505 /* RuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215BE562A9DE62800534505 /* RuleView.swift */; };
 		7238EC512A9E0F360018EB47 /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7238EC502A9E0F360018EB47 /* OutlinedButton.swift */; };
+		723CD40D2A9F40EA005CAD6B /* AuthenticationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD40C2A9F40EA005CAD6B /* AuthenticationMode.swift */; };
+		723CD40F2A9F488A005CAD6B /* TextFieldAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD40E2A9F488A005CAD6B /* TextFieldAuth.swift */; };
+		723CD4112A9F48C0005CAD6B /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD4102A9F48C0005CAD6B /* AuthenticationViewModel.swift */; };
+		723CD4162A9F5F02005CAD6B /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD4152A9F5F02005CAD6B /* SFSymbols.swift */; };
+		723CD4182A9F5F4C005CAD6B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD4172A9F5F4C005CAD6B /* Colors.swift */; };
+		723CD41A2A9F5F5F005CAD6B /* Illustrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD4192A9F5F5F005CAD6B /* Illustrations.swift */; };
+		723CD41C2A9F6045005CAD6B /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD41B2A9F6045005CAD6B /* Values.swift */; };
+		723CD41E2A9F6138005CAD6B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD41D2A9F6138005CAD6B /* Fonts.swift */; };
+		723CD4222A9F6AE2005CAD6B /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD4212A9F6AE2005CAD6B /* TextButton.swift */; };
+		723CD4242A9F6F6C005CAD6B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD4232A9F6F6C005CAD6B /* UserViewModel.swift */; };
+		728049BA2AA8879C00698F51 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728049B92AA8879C00698F51 /* Theme.swift */; };
+		728049C02AA8914D00698F51 /* NavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728049BF2AA8914D00698F51 /* NavigationTitle.swift */; };
+		728049C22AA8ADFA00698F51 /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728049C12AA8ADFA00698F51 /* SettingRow.swift */; };
 		72E7C17F2A9F2F87006E2899 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72E7C17E2A9F2F87006E2899 /* GoogleService-Info.plist */; };
 		72E7C1822A9F3111006E2899 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 72E7C1812A9F3111006E2899 /* FirebaseAnalytics */; };
 		72E7C1842A9F3111006E2899 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 72E7C1832A9F3111006E2899 /* FirebaseAuth */; };
@@ -32,6 +47,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		720CFA092AA0925300FF372F /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		720CFA0B2AA095A800FF372F /* OutlinedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedIconButton.swift; sourceTree = "<group>"; };
+		720CFA0D2AA0AEE700FF372F /* SecureFieldAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldAuth.swift; sourceTree = "<group>"; };
 		7215BE2C2A9DCB7600534505 /* Wattblock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wattblock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7215BE2F2A9DCB7600534505 /* WattblockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WattblockApp.swift; sourceTree = "<group>"; };
 		7215BE332A9DCB7700534505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,7 +57,6 @@
 		7215BE3D2A9DCB9B00534505 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7215BE462A9DE5AB00534505 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		7215BE482A9DE5CA00534505 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		7215BE4A2A9DE5D700534505 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		7215BE4C2A9DE5E700534505 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7215BE4E2A9DE5F400534505 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		7215BE502A9DE5FF00534505 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -47,6 +64,19 @@
 		7215BE542A9DE61C00534505 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		7215BE562A9DE62800534505 /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
 		7238EC502A9E0F360018EB47 /* OutlinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
+		723CD40C2A9F40EA005CAD6B /* AuthenticationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationMode.swift; sourceTree = "<group>"; };
+		723CD40E2A9F488A005CAD6B /* TextFieldAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAuth.swift; sourceTree = "<group>"; };
+		723CD4102A9F48C0005CAD6B /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		723CD4152A9F5F02005CAD6B /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		723CD4172A9F5F4C005CAD6B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		723CD4192A9F5F5F005CAD6B /* Illustrations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illustrations.swift; sourceTree = "<group>"; };
+		723CD41B2A9F6045005CAD6B /* Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
+		723CD41D2A9F6138005CAD6B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		723CD4212A9F6AE2005CAD6B /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		723CD4232A9F6F6C005CAD6B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		728049B92AA8879C00698F51 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		728049BF2AA8914D00698F51 /* NavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitle.swift; sourceTree = "<group>"; };
+		728049C12AA8ADFA00698F51 /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
 		72E7C17E2A9F2F87006E2899 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		72E7C18B2A9F32C2006E2899 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		72E7C18D2A9F335E006E2899 /* FireUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireUser.swift; sourceTree = "<group>"; };
@@ -94,6 +124,7 @@
 				7215BE402A9DE55900534505 /* Views */,
 				7215BE3F2A9DE54E00534505 /* Managers */,
 				72E7C17D2A9F2F53006E2899 /* Firebase */,
+				723CD4142A9F5ECF005CAD6B /* Utilities */,
 				7215BE332A9DCB7700534505 /* Assets.xcassets */,
 				7215BE3D2A9DCB9B00534505 /* Launch Screen.storyboard */,
 				7215BE352A9DCB7700534505 /* Preview Content */,
@@ -122,7 +153,6 @@
 			children = (
 				7238EC4F2A9E0EAB0018EB47 /* Components */,
 				7215BE482A9DE5CA00534505 /* LoginView.swift */,
-				7215BE4A2A9DE5D700534505 /* StartView.swift */,
 				7215BE4C2A9DE5E700534505 /* HomeView.swift */,
 				7215BE4E2A9DE5F400534505 /* GameView.swift */,
 				7215BE502A9DE5FF00534505 /* SettingsView.swift */,
@@ -145,6 +175,8 @@
 		7238EC4C2A9E0E870018EB47 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				723CD4102A9F48C0005CAD6B /* AuthenticationViewModel.swift */,
+				723CD4232A9F6F6C005CAD6B /* UserViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -160,6 +192,8 @@
 		7238EC4E2A9E0E980018EB47 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				723CD40C2A9F40EA005CAD6B /* AuthenticationMode.swift */,
+				728049B92AA8879C00698F51 /* Theme.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -168,8 +202,27 @@
 			isa = PBXGroup;
 			children = (
 				7238EC502A9E0F360018EB47 /* OutlinedButton.swift */,
+				723CD40E2A9F488A005CAD6B /* TextFieldAuth.swift */,
+				723CD4212A9F6AE2005CAD6B /* TextButton.swift */,
+				720CFA0B2AA095A800FF372F /* OutlinedIconButton.swift */,
+				720CFA0D2AA0AEE700FF372F /* SecureFieldAuth.swift */,
+				728049BF2AA8914D00698F51 /* NavigationTitle.swift */,
+				728049C12AA8ADFA00698F51 /* SettingRow.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		723CD4142A9F5ECF005CAD6B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				723CD4152A9F5F02005CAD6B /* SFSymbols.swift */,
+				723CD4172A9F5F4C005CAD6B /* Colors.swift */,
+				723CD4192A9F5F5F005CAD6B /* Illustrations.swift */,
+				723CD41B2A9F6045005CAD6B /* Values.swift */,
+				723CD41D2A9F6138005CAD6B /* Fonts.swift */,
+				720CFA092AA0925300FF372F /* Strings.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		72E7C17D2A9F2F53006E2899 /* Firebase */ = {
@@ -190,6 +243,7 @@
 				7215BE282A9DCB7600534505 /* Sources */,
 				7215BE292A9DCB7600534505 /* Frameworks */,
 				7215BE2A2A9DCB7600534505 /* Resources */,
+				720CFA082AA087FC00FF372F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -257,23 +311,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		720CFA082AA087FC00FF372F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"$(SRCROOT)/${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"$(SRCROOT)/${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7215BE282A9DCB7600534505 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				723CD4222A9F6AE2005CAD6B /* TextButton.swift in Sources */,
 				7215BE532A9DE60E00534505 /* EditProfileView.swift in Sources */,
+				723CD4182A9F5F4C005CAD6B /* Colors.swift in Sources */,
 				7215BE472A9DE5AB00534505 /* FirebaseManager.swift in Sources */,
 				72E7C18E2A9F335E006E2899 /* FireUser.swift in Sources */,
 				72E7C18C2A9F32C2006E2899 /* UserRepository.swift in Sources */,
+				723CD4112A9F48C0005CAD6B /* AuthenticationViewModel.swift in Sources */,
 				7215BE512A9DE5FF00534505 /* SettingsView.swift in Sources */,
+				723CD41E2A9F6138005CAD6B /* Fonts.swift in Sources */,
+				720CFA0E2AA0AEE700FF372F /* SecureFieldAuth.swift in Sources */,
+				723CD41C2A9F6045005CAD6B /* Values.swift in Sources */,
+				720CFA0C2AA095A800FF372F /* OutlinedIconButton.swift in Sources */,
+				720CFA0A2AA0925300FF372F /* Strings.swift in Sources */,
+				728049C22AA8ADFA00698F51 /* SettingRow.swift in Sources */,
+				728049C02AA8914D00698F51 /* NavigationTitle.swift in Sources */,
+				723CD4242A9F6F6C005CAD6B /* UserViewModel.swift in Sources */,
 				7215BE552A9DE61C00534505 /* PlayerView.swift in Sources */,
-				7215BE4B2A9DE5D700534505 /* StartView.swift in Sources */,
 				7215BE572A9DE62800534505 /* RuleView.swift in Sources */,
+				723CD4162A9F5F02005CAD6B /* SFSymbols.swift in Sources */,
+				728049BA2AA8879C00698F51 /* Theme.swift in Sources */,
+				723CD40F2A9F488A005CAD6B /* TextFieldAuth.swift in Sources */,
 				7215BE4D2A9DE5E700534505 /* HomeView.swift in Sources */,
 				7215BE492A9DE5CA00534505 /* LoginView.swift in Sources */,
 				7215BE302A9DCB7600534505 /* WattblockApp.swift in Sources */,
 				7215BE4F2A9DE5F400534505 /* GameView.swift in Sources */,
+				723CD40D2A9F40EA005CAD6B /* AuthenticationMode.swift in Sources */,
+				723CD41A2A9F5F5F005CAD6B /* Illustrations.swift in Sources */,
 				7238EC512A9E0F360018EB47 /* OutlinedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Wattblock/Preview Content\"";
 				DEVELOPMENT_TEAM = 2BVXDVW7D8;
 				ENABLE_PREVIEWS = YES;
@@ -437,6 +533,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Wattblock/Preview Content\"";
 				DEVELOPMENT_TEAM = 2BVXDVW7D8;
 				ENABLE_PREVIEWS = YES;

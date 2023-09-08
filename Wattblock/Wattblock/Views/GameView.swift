@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct GameView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                Text("Hello, SwiftUI")
+            }
+            .navigationTitle("Title")
+            .toolbarBackground(Color.pink, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarBackground(.visible, for: .bottomBar)
+        }
     }
 }
 

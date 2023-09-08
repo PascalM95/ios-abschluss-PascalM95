@@ -18,8 +18,19 @@ struct WattblockApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            if userViewModel.isUserLoggedIn {
+                HomeView()
+                    .environmentObject(userViewModel)
+            } else {
+                LoginView()
+            }
         }
     }
+    
+    
+    
+    // MARK: - Variables
+    
+    @StateObject private var userViewModel = UserViewModel()
     
 }
