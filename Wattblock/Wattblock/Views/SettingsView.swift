@@ -21,14 +21,15 @@ struct SettingsView: View {
 //                    SettingRow(title: Strings.general)
 //                    Spacer()
                         Section {
-                            Button {
-                                self.showProfileSheet.toggle()
+                            NavigationLink {
+                                EditProfileView()
                             } label: {
                                 HStack {
                                     SFSymbols.personCircle
                                     Text(Strings.profile)
                                 }
                             }
+
                         }
                         
                         Section {
@@ -36,7 +37,21 @@ struct SettingsView: View {
                         }
                         
                         Section {
+                            Button {
+                                self.showSheet.toggle()
+                            } label: {
+                                HStack {
+                                    Text(Strings.termsOfUse)
+                                }
+                            }
                             
+                            Button {
+                                self.showSheet.toggle()
+                            } label: {
+                                HStack {
+                                    Text(Strings.dataProtection)
+                                }
+                            }
                         }
                         
                         Button(Strings.signOut, action: userViewModel.logout)
@@ -46,8 +61,8 @@ struct SettingsView: View {
                 .navigationTitle(Strings.settings)
                 .padding(.top, Values.padding4)
             }
-            .sheet(isPresented: $showProfileSheet) {
-                EditProfileView()
+            .sheet(isPresented: $showSheet) {
+               
             }
             
         }
@@ -57,7 +72,7 @@ struct SettingsView: View {
     
     // MARK: - Variables
     
-    @State private var showProfileSheet = false
+    @State private var showSheet = false
     @EnvironmentObject var userViewModel: UserViewModel
     
 }

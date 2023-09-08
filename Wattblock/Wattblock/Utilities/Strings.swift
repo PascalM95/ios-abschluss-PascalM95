@@ -32,4 +32,6 @@ enum Strings {
     static let dark = "dark"
     static let system = "system"
     static let colorScheme = "Farbschema"
+    static let termsOfUse = "Nutzungsbedingungen"
+    static let dataProtection = "Datenschutz"
 }
