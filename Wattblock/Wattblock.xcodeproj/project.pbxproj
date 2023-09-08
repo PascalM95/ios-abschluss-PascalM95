@@ -33,7 +33,6 @@
 		723CD41E2A9F6138005CAD6B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD41D2A9F6138005CAD6B /* Fonts.swift */; };
 		723CD4222A9F6AE2005CAD6B /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD4212A9F6AE2005CAD6B /* TextButton.swift */; };
 		723CD4242A9F6F6C005CAD6B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD4232A9F6F6C005CAD6B /* UserViewModel.swift */; };
-		728049BA2AA8879C00698F51 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728049B92AA8879C00698F51 /* Theme.swift */; };
 		728049C02AA8914D00698F51 /* NavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728049BF2AA8914D00698F51 /* NavigationTitle.swift */; };
 		728049C22AA8ADFA00698F51 /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728049C12AA8ADFA00698F51 /* SettingRow.swift */; };
 		72E7C17F2A9F2F87006E2899 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72E7C17E2A9F2F87006E2899 /* GoogleService-Info.plist */; };
@@ -74,7 +73,6 @@
 		723CD41D2A9F6138005CAD6B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		723CD4212A9F6AE2005CAD6B /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		723CD4232A9F6F6C005CAD6B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		728049B92AA8879C00698F51 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		728049BF2AA8914D00698F51 /* NavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitle.swift; sourceTree = "<group>"; };
 		728049C12AA8ADFA00698F51 /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
 		72E7C17E2A9F2F87006E2899 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				723CD40C2A9F40EA005CAD6B /* AuthenticationMode.swift */,
-				728049B92AA8879C00698F51 /* Theme.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -361,7 +358,6 @@
 				7215BE552A9DE61C00534505 /* PlayerView.swift in Sources */,
 				7215BE572A9DE62800534505 /* RuleView.swift in Sources */,
 				723CD4162A9F5F02005CAD6B /* SFSymbols.swift in Sources */,
-				728049BA2AA8879C00698F51 /* Theme.swift in Sources */,
 				723CD40F2A9F488A005CAD6B /* TextFieldAuth.swift in Sources */,
 				7215BE4D2A9DE5E700534505 /* HomeView.swift in Sources */,
 				7215BE492A9DE5CA00534505 /* LoginView.swift in Sources */,
