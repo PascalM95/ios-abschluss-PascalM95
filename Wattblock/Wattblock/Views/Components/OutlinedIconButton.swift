@@ -18,9 +18,12 @@ struct OutlinedIconButton: View {
             Spacer()
             Text(title)
                 .font(.headline)
-                .padding(.trailing, Values.padding40)
             
             Spacer()
+            icon
+                .resizable()
+                .frame(width: Values.iconFrame, height: Values.iconFrame)
+                .scaledToFit()
         }
         .frame(maxWidth: .infinity)
         .overlay(RoundedRectangle(cornerRadius: Values.cornerRadius)

@@ -15,7 +15,10 @@ struct StatisticView: View {
                 .edgesIgnoringSafeArea(.top)
             Colors.background
             VStack {
-                
+                Text("Coming soon...")
+                    .font(Fonts.largeTitle)
+                    .bold()
+                    .foregroundColor(Colors.bavarianBlue)
             }
             .navigationTitle(Strings.stats)
         }
