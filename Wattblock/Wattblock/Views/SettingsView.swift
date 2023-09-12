@@ -17,9 +17,6 @@ struct SettingsView: View {
                 Colors.backgroundSettings
                 VStack {
                     Form {
-//                    SettingRow(title: Strings.profile)
-//                    SettingRow(title: Strings.general)
-//                    Spacer()
                         Section {
                             NavigationLink {
                                 EditProfileView()

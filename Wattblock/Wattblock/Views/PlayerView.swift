@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct PlayerView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Colors.bavarianBlue
+                .edgesIgnoringSafeArea(.top)
+            Colors.background
+            VStack {
+                
+            }
+            .navigationTitle(Strings.players)
+        }
     }
+    
 }
 
 struct PlayerView_Previews: PreviewProvider {

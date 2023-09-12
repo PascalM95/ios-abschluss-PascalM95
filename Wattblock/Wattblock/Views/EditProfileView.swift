@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct EditProfileView: View {
+    
     var body: some View {
         VStack {
             
         }
     }
+    
 }
 
 struct EditProfileView_Previews: PreviewProvider {

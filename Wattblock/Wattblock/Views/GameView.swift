@@ -10,16 +10,17 @@ import SwiftUI
 struct GameView: View {
     
     var body: some View {
-        NavigationStack {
-            List {
-                Text("Hello, SwiftUI")
+        ZStack {
+            Colors.bavarianBlue
+                .edgesIgnoringSafeArea(.top)
+            Colors.background
+            VStack {
+                
             }
-            .navigationTitle("Title")
-            .toolbarBackground(Color.pink, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarBackground(.visible, for: .bottomBar)
+            .navigationTitle(Strings.appName)
         }
     }
+    
 }
 
 struct GameView_Previews: PreviewProvider {

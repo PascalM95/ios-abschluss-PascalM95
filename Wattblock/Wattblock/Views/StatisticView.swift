@@ -1,13 +1,13 @@
 //
-//  RuleView.swift
+//  StatisticView.swift
 //  Wattblock
 //
-//  Created by Pascal Mönch on 29.08.23.
+//  Created by Pascal Mönch on 12.09.23.
 //
 
 import SwiftUI
 
-struct RuleView: View {
+struct StatisticView: View {
     
     var body: some View {
         ZStack {
@@ -17,14 +17,14 @@ struct RuleView: View {
             VStack {
                 
             }
-            .navigationTitle(Strings.rules)
+            .navigationTitle(Strings.stats)
         }
     }
     
 }
 
-struct RuleView_Previews: PreviewProvider {
+struct StatisticView_Previews: PreviewProvider {
     static var previews: some View {
-        RuleView()
+        StatisticView()
     }
 }
