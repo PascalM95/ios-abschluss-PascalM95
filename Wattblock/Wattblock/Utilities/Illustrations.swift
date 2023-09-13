@@ -14,4 +14,5 @@ enum Illustrations {
     static let grass = Image("gras")
     static let heart = Image("herz")
     static let bell = Image("schellen")
+    static let gameScreenBackground = Image("gamescreen")
 }

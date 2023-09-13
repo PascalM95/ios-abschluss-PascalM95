@@ -19,6 +19,7 @@ struct Values {
     static let padding32: CGFloat = 32
     static let padding40: CGFloat = 40
     static let padding50: CGFloat = 50
+    static let padding100: CGFloat = 100
     
     static let iconSize: CGFloat = 16
     static let iconSizeLarge: CGFloat = 18

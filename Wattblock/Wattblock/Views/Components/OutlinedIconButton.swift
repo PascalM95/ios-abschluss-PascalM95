@@ -17,7 +17,7 @@ struct OutlinedIconButton: View {
                 .scaledToFit()
             Spacer()
             Text(title)
-                .font(.headline)
+                .font(Fonts.headline)
             
             Spacer()
             icon

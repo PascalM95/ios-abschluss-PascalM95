@@ -34,4 +34,10 @@ enum Strings {
     static let colorScheme = "Farbschema"
     static let termsOfUse = "Nutzungsbedingungen"
     static let dataProtection = "Datenschutz"
+    static let plus2 = "+2"
+    static let plus3 = "+3"
+    static let plus4 = "+4"
+    static let plus5 = "+5"
+    static let plus6 = "+6"
+    static let minus2 = "-2 "
 }
