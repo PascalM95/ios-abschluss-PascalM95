@@ -22,9 +22,9 @@ struct GameView: View {
                         .padding(.bottom, Values.padding100)
                     VStack {
                         HStack {
-                            Text("Peter")
+                            Text("Peter & Hans")
                             Spacer()
-                            Text("Sepp")
+                            Text("Sepp & Franz")
                         }
                         .padding(.top, Values.padding24)
                         .padding(.horizontal, Values.padding50)
@@ -37,6 +37,7 @@ struct GameView: View {
                             GameButton(text: Strings.plus6, action: {})
                             GameButton(text: Strings.minus2, action: {})
                         }
+                        .padding(.bottom)
                     }
                 }
             }
