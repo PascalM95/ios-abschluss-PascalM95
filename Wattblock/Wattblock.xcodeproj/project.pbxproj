@@ -33,6 +33,7 @@
 		723CD41E2A9F6138005CAD6B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD41D2A9F6138005CAD6B /* Fonts.swift */; };
 		723CD4222A9F6AE2005CAD6B /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD4212A9F6AE2005CAD6B /* TextButton.swift */; };
 		723CD4242A9F6F6C005CAD6B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723CD4232A9F6F6C005CAD6B /* UserViewModel.swift */; };
+		7252EAFA2AB3197600C1D6FC /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7252EAF92AB3197600C1D6FC /* GameViewModel.swift */; };
 		7270DBFC2AB1E0BA002751E0 /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7270DBFB2AB1E0BA002751E0 /* GameButton.swift */; };
 		728049C02AA8914D00698F51 /* NavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728049BF2AA8914D00698F51 /* NavigationTitle.swift */; };
 		72856D642AB04D81007384B8 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72856D632AB04D81007384B8 /* StatisticView.swift */; };
@@ -74,6 +75,7 @@
 		723CD41D2A9F6138005CAD6B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		723CD4212A9F6AE2005CAD6B /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		723CD4232A9F6F6C005CAD6B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		7252EAF92AB3197600C1D6FC /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		7270DBFB2AB1E0BA002751E0 /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
 		728049BF2AA8914D00698F51 /* NavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitle.swift; sourceTree = "<group>"; };
 		72856D632AB04D81007384B8 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			children = (
 				723CD4102A9F48C0005CAD6B /* AuthenticationViewModel.swift */,
 				723CD4232A9F6F6C005CAD6B /* UserViewModel.swift */,
+				7252EAF92AB3197600C1D6FC /* GameViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				723CD4222A9F6AE2005CAD6B /* TextButton.swift in Sources */,
 				7270DBFC2AB1E0BA002751E0 /* GameButton.swift in Sources */,
 				7215BE532A9DE60E00534505 /* EditProfileView.swift in Sources */,
+				7252EAFA2AB3197600C1D6FC /* GameViewModel.swift in Sources */,
 				723CD4182A9F5F4C005CAD6B /* Colors.swift in Sources */,
 				7215BE472A9DE5AB00534505 /* FirebaseManager.swift in Sources */,
 				72E7C18E2A9F335E006E2899 /* FireUser.swift in Sources */,

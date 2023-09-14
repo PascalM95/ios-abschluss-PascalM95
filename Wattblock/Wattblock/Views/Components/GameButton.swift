@@ -15,6 +15,7 @@ struct GameButton: View {
                 .font(Fonts.headline)
                 .padding()
         }
+        .frame(width: Values.gameButtonSize, height: Values.gameButtonSize)
         .border(Colors.bavarianBlue, width: Values.borderWidth)
         .cornerRadius(Values.cornerRadius)
     }

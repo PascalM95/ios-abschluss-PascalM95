@@ -19,6 +19,7 @@ struct Values {
     static let padding32: CGFloat = 32
     static let padding40: CGFloat = 40
     static let padding50: CGFloat = 50
+    static let padding60: CGFloat = 60
     static let padding100: CGFloat = 100
     
     static let iconSize: CGFloat = 16
@@ -30,4 +31,12 @@ struct Values {
     static let borderWidth: CGFloat = 2
     
     static let spacing12: CGFloat = 12
+    
+    static let gameButtonSize: CGFloat = 54
+    
+    static let plus2: Int = 2
+    static let plus3: Int = 3
+    static let plus4: Int = 4
+    static let plus5: Int = 5
+    static let minus2: Int = -2
 }
