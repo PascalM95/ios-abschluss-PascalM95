@@ -14,4 +14,5 @@ enum Colors {
     static let background = Color("BackgroundColor")
     static let backgroundSettings = Color("backgroundSettings")
     static let settingRow = Color("settingRow")
+    static let dividerColor = Color("DividerColor")
 }

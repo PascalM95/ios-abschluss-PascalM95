@@ -27,6 +27,7 @@ struct Values {
     static let iconFrame: CGFloat = 50
     static let textFrameH: CGFloat = 36
     static let logoFrameSize: CGFloat = 280
+    static let gameImageSize: CGFloat = 80
     
     static let borderWidth: CGFloat = 2
     
