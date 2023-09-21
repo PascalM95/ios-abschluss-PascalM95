@@ -15,4 +15,5 @@ enum SFSymbols {
     static let lock = Image(systemName: "lock")
     static let lockFill = Image(systemName: "lock.fill")
     static let personCircle = Image(systemName: "person.circle")
+    static let reset = Image(systemName: "arrow.counterclockwise")
 }

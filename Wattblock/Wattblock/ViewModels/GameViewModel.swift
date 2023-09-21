@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class GameViewModel: ObservableObject {
     
@@ -53,7 +54,14 @@ class GameViewModel: ObservableObject {
     // MARK: - Functions
     
     func updateScore(_ points: Int) {
-        score += points
+        var newScore = score + points
+        
+        newScore = min(max(newScore, 0), 14)
+        
+        score = newScore
     }
     
+    func resetScore() {
+        score = 0
+    }
 }

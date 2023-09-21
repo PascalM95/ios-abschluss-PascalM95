@@ -22,12 +22,12 @@ struct HomeView: View {
                     NavigationTitle(title: Strings.appName)
                     
                     Spacer()
-                    NavigationLink(destination: GameView()) {
+                    NavigationLink(destination: GameView(gameMode: .vs1)) {
                         OutlinedIconButton(icon: Illustrations.acorn, title: Strings.vs1)
                             .padding(.horizontal, Values.padding24)
                     }
                     
-                    NavigationLink(destination: GameView()) {
+                    NavigationLink(destination: GameView(gameMode: .vs2)) {
                         OutlinedIconButton(icon: Illustrations.grass, title: Strings.vs2)
                             .padding(.horizontal, Values.padding24)
                     }
