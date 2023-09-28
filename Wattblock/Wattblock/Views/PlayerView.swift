@@ -10,14 +10,24 @@ import SwiftUI
 struct PlayerView: View {
     
     var body: some View {
-        ZStack {
-            Colors.bavarianBlue
-                .edgesIgnoringSafeArea(.top)
-            Colors.background
-            VStack {
-                
+        NavigationStack {
+            ZStack {
+                Colors.bavarianBlue
+                    .edgesIgnoringSafeArea(.top)
+                Colors.backgroundSettings
+                VStack {
+                    Form {
+                        Section {
+                            ForEach(0..<10) { number in
+                            Text("Name")
+                            }
+                            
+                        }
+                    }
+                }
+                .navigationTitle(Strings.players)
+                .padding(.top, Values.padding4)
             }
-            .navigationTitle(Strings.players)
         }
     }
     

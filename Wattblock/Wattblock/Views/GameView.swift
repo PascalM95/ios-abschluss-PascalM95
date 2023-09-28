@@ -19,6 +19,7 @@ struct GameView: View {
                 VStack {
                     HStack(spacing: 0) {
                         TableView(gameMode: gameMode, name1: "Sepp", name2: "Franz", team: .one)
+                            .environmentObject(gameViewModel1)
                         
                         Divider()
                             .frame(width: Values.borderWidth)
@@ -26,27 +27,27 @@ struct GameView: View {
                             .padding(.vertical, Values.padding4)
                         
                         TableView(gameMode: gameMode, name1: "Hans", name2: "Peter", team: .two)
+                            .environmentObject(gameViewModel2)
                     }
                 }
-                VStack {
-                    Spacer()
-                }
-                .toolbar {
-                    Button {
-                        gameViewModel.resetScore()
-                    } label: {
-                        SFSymbols.reset
-                    }
-                }
-                .navigationTitle(Strings.appName)
             }
+            .toolbar {
+                Button {
+                    gameViewModel1.resetScore()
+                    gameViewModel2.resetScore()
+                } label: {
+                    SFSymbols.reset
+                }
+            }
+            .navigationTitle(Strings.appName)
         }
     }
     
     
     // MARK: - Variables
     
-    @StateObject private var gameViewModel = GameViewModel()
+    @StateObject private var gameViewModel1 = GameViewModel()
+    @StateObject private var gameViewModel2 = GameViewModel()
     let gameMode: GameMode
     
 }

@@ -68,7 +68,7 @@ struct TableView: View {
     
     // MARK: - Variables
     
-    @StateObject private var gameViewModel = GameViewModel()
+    @EnvironmentObject private var gameViewModel: GameViewModel
     let gameMode: GameMode
     let name1: String
     let name2: String
@@ -78,5 +78,6 @@ struct TableView: View {
 struct TableView_Previews: PreviewProvider {
     static var previews: some View {
         TableView(gameMode: .vs2, name1: "Hans", name2: "Peter", team: .one)
+            .environmentObject(GameViewModel())
     }
 }
