@@ -27,7 +27,7 @@ struct Values {
     static let iconFrame: CGFloat = 50
     static let textFrameH: CGFloat = 36
     static let logoFrameSize: CGFloat = 280
-    static let gameImageSize: CGFloat = 80
+    static let gameImageSize: CGFloat = 200
     
     static let borderWidth: CGFloat = 2
     
@@ -40,4 +40,5 @@ struct Values {
     static let plus4: Int = 4
     static let plus5: Int = 5
     static let minus2: Int = -2
+    static let minus3: Int = -3
 }

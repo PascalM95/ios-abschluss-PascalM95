@@ -40,6 +40,7 @@ enum Strings {
     static let plus5 = "+5"
     static let plus6 = "+6"
     static let minus2 = "-2"
+    static let minus3 = "-3"
     static let twoPoints = "punkte2"
     static let threePoints = ""
     static let fourPoints = "punkte4"

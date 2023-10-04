@@ -13,40 +13,52 @@ class GameViewModel: ObservableObject {
     // MARK: - Variables
     
     @Published var score = 0
+    @Published var firstButton2 = false
+    @Published var firstButton3 = false
     
-    var imagePoints: String {
-        switch score {
-        case 2:
-            return Strings.twoPoints
-        case 3:
-            return Strings.threePoints
-        case 4:
-            return Strings.fourPoints
-        case 5:
-            return Strings.fivePoints
-        case 6:
-            return Strings.sixPoints
-        case 7:
-            return Strings.sevenPoints
-        case 8:
-            return Strings.eightPoints
-        case 9:
-            return Strings.ninePoints
-        case 10:
-            return Strings.tenPoints
-        case 11:
-            return Strings.elevenPoints
-        case 12:
-            return Strings.twelvePoints
-        case 13:
-            return Strings.thirteenPoints
-        case 14:
-            return Strings.fourteenPoints
-        case 15:
-            return Strings.fifteenPoints
-        default:
-            return ""
-        }
+    
+    
+    // MARK: - Functions
+    
+    var imagePoints: Image {
+            switch score {
+            case 2:
+                return Illustrations.twoPoints
+            case 3:
+                return Illustrations.threePoints
+            case 4:
+                return Illustrations.fourPoints
+            case 5:
+                if firstButton2 {
+                    return Illustrations.fivePoints1
+                } else if firstButton3 {
+                    return Illustrations.fivePoints2
+                } else {
+                    return Illustrations.fivePoints1
+                }
+            case 6:
+                return Illustrations.sixPoints1
+            case 7:
+                return Illustrations.sevenPoints1
+            case 8:
+                return Illustrations.eightPoints1
+            case 9:
+                return Illustrations.ninePoints1
+            case 10:
+                return Illustrations.tenPoints1
+            case 11:
+                return Illustrations.elevenPoints1
+            case 12:
+                return Illustrations.twelvePoints1
+            case 13:
+                return Illustrations.thirteenPoints1
+            case 14:
+                return Illustrations.fourteenPoints1
+            case 15:
+                return Illustrations.fifteenPoints1
+            default:
+                return Image("")
+            }
     }
     
     
@@ -63,5 +75,7 @@ class GameViewModel: ObservableObject {
     
     func resetScore() {
         score = 0
+        firstButton2 = false
+        firstButton3 = false
     }
 }
