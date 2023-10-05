@@ -116,9 +116,9 @@ class GameViewModel: ObservableObject {
         scores.append(score)
     }
     
-    func removeLastScore(_ score: Int) {
-        if !scores.isEmpty && scores.last == score {
-            scores.removeLast()
+    func removeScore(_ score: Int, from scores: inout [Int]) {
+        if let index = scores.firstIndex(of: score) {
+            scores.remove(at: index)
         }
     }
     

@@ -57,10 +57,10 @@ struct TableView: View {
                         
                         HStack {
                             GameButton(text: Strings.minus2) {
-                                gameViewModel.removeLastScore(Values.minus2)
+                                gameViewModel.removeScore(Values.minus2, from: &gameViewModel.scores)
                             }
                             GameButton(text: Strings.minus3) {
-                                gameViewModel.removeLastScore(Values.minus3)
+                                gameViewModel.removeScore(Values.minus3, from: &gameViewModel.scores)
                             }
                         }
                     }
