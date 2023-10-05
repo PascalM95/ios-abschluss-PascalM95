@@ -39,30 +39,28 @@ struct TableView: View {
                     VStack {
                         HStack {
                             GameButton(text: Strings.plus2) {
-                                gameViewModel.firstButton2 = true
-                                gameViewModel.updateScore(Values.plus2)
+                                gameViewModel.addScore(Values.plus2)
                             }
                             GameButton(text: Strings.plus3) {
-                                gameViewModel.firstButton3 = true
-                                gameViewModel.updateScore(Values.plus3)
+                                gameViewModel.addScore(Values.plus3)
                             }
                         }
                         
                         HStack {
                             GameButton(text: Strings.plus4) {
-                                gameViewModel.updateScore(Values.plus4)
+                                gameViewModel.addScore(Values.plus4)
                             }
                             GameButton(text: Strings.plus5) {
-                                gameViewModel.updateScore(Values.plus5)
+                                gameViewModel.addScore(Values.plus5)
                             }
                         }
                         
                         HStack {
                             GameButton(text: Strings.minus2) {
-                                gameViewModel.updateScore(Values.minus2)
+                                gameViewModel.removeLastScore(Values.minus2)
                             }
                             GameButton(text: Strings.minus3) {
-                                gameViewModel.updateScore(Values.minus3)
+                                gameViewModel.removeLastScore(Values.minus3)
                             }
                         }
                     }

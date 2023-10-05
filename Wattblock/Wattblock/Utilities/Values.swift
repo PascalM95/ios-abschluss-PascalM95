@@ -39,6 +39,6 @@ struct Values {
     static let plus3: Int = 3
     static let plus4: Int = 4
     static let plus5: Int = 5
-    static let minus2: Int = -2
-    static let minus3: Int = -3
+    static let minus2: Int = 2
+    static let minus3: Int = 3
 }

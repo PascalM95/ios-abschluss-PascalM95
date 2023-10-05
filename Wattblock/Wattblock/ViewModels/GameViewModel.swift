@@ -12,70 +12,87 @@ class GameViewModel: ObservableObject {
     
     // MARK: - Variables
     
-    @Published var score = 0
-    @Published var firstButton2 = false
-    @Published var firstButton3 = false
-    
-    
-    
-    // MARK: - Functions
-    
-    var imagePoints: Image {
-            switch score {
-            case 2:
-                return Illustrations.twoPoints
-            case 3:
-                return Illustrations.threePoints
-            case 4:
-                return Illustrations.fourPoints
-            case 5:
-                if firstButton2 {
-                    return Illustrations.fivePoints1
-                } else if firstButton3 {
-                    return Illustrations.fivePoints2
-                } else {
-                    return Illustrations.fivePoints1
-                }
-            case 6:
-                return Illustrations.sixPoints1
-            case 7:
-                return Illustrations.sevenPoints1
-            case 8:
-                return Illustrations.eightPoints1
-            case 9:
-                return Illustrations.ninePoints1
-            case 10:
-                return Illustrations.tenPoints1
-            case 11:
-                return Illustrations.elevenPoints1
-            case 12:
-                return Illustrations.twelvePoints1
-            case 13:
-                return Illustrations.thirteenPoints1
-            case 14:
-                return Illustrations.fourteenPoints1
-            case 15:
-                return Illustrations.fifteenPoints1
-            default:
-                return Image("")
+    @Published var scores : [Int] = [] {
+        didSet {
+            if let newScore = scores.last {
+                let totalScore = scores.reduce(0, +)
+                
+                updateImage(totalScore, newScore)
             }
+        }
     }
+    
+    @Published var imagePoints: Image = Image("")
     
     
     
     // MARK: - Functions
     
-    func updateScore(_ points: Int) {
-        var newScore = score + points
-        
-        newScore = min(max(newScore, 0), 14)
-        
-        score = newScore
+    func updateImage(_ totalScore: Int, _ newScore: Int) {
+        if totalScore == 2 && newScore == 2 {
+            imagePoints = Illustrations.twoPoints
+        } else if totalScore == 3 && newScore == 3 {
+            imagePoints = Illustrations.threePoints
+        } else if totalScore == 4 && (newScore == 2 || newScore == 4) {
+            imagePoints = Illustrations.fourPoints
+        } else if totalScore == 5 && newScore == 2 {
+            imagePoints = Illustrations.fivePoints2
+        } else if totalScore == 5 && (newScore == 3 || newScore == 5) {
+            imagePoints = Illustrations.fivePoints1
+        } else if totalScore == 6 && (newScore == 2 || newScore == 4) {
+            imagePoints = Illustrations.sixPoints1
+        } else if totalScore == 6 && newScore == 3 {
+            imagePoints = Illustrations.sixPoints2
+        } else if totalScore == 7 && (scores.first == 2 || scores.first == 4 || scores.first == 5) && (newScore == 3 || newScore == 2 || newScore == 5) {
+            imagePoints = Illustrations.sevenPoints1
+        } else if totalScore == 7 && scores.first == 3 && (newScore == 2 || newScore == 4) {
+            imagePoints = Illustrations.sevenPoints2
+        } else if totalScore == 8 && (scores.first == 2 || scores.first == 4) && (newScore == 2 || newScore == 4) {
+            imagePoints = Illustrations.eightPoints1
+        } else if totalScore == 8 && (scores.first == 2 || scores.first == 5) && newScore == 3 {
+            imagePoints = Illustrations.eightPoints2
+        } else if totalScore == 8 && scores.first == 3 && (newScore == 2 || newScore == 3 || newScore == 5) {
+            imagePoints = Illustrations.eightPoints3
+        } else if totalScore == 9 && (scores.first == 2 || scores.first == 4 || scores.first == 5) && (newScore == 2 || newScore == 3 || newScore == 4 || newScore == 5) {
+            imagePoints = Illustrations.ninePoints1
+        } else if totalScore == 9 && scores.first == 3 && (newScore == 2 || newScore == 4) {
+            imagePoints = Illustrations.ninePoints2
+        } else if totalScore == 9 && scores.first == 3 && newScore == 3 {
+            imagePoints = Illustrations.ninePoints3
+        } else if totalScore == 10 && (scores.first == 2 || scores.first == 4) && (newScore == 2 || newScore == 4) && !scores.contains([3, 3]) {
+            imagePoints = Illustrations.tenPoints1
+        } else if totalScore == 10 && (scores.first == 2 || scores.first == 4 || scores.first == 5) && (newScore == 2 || newScore == 3 || newScore == 5) {
+            imagePoints = Illustrations.tenPoints2
+        } else if totalScore == 10 && scores.first == 3 && (newScore == 2 || newScore == 4 || newScore == 5) {
+            imagePoints = Illustrations.tenPoints3
+        } else if totalScore == 11 && (scores.first == 2 || scores.first == 4 || scores.first == 5) && (newScore == 2 || newScore == 3 || newScore == 4 || newScore == 5) {
+            imagePoints = Illustrations.elevenPoints1
+        } else if totalScore == 11 && scores.first == 3 && (newScore == 2 || newScore == 4) {
+            imagePoints = Illustrations.elevenPoints2
+        } else if totalScore == 11 && (scores.first == 2 || scores.first == 5) && newScore == 3 {
+            imagePoints = Illustrations.elevenPoints3
+        } else if totalScore == 11 && scores.first == 3 && (newScore == 3 || newScore == 5){
+            imagePoints = Illustrations.elevenPoints4
+        } else if totalScore == 12 && (scores.first == 2 || scores.first == 4) && (newScore == 2 || newScore == 4) && !scores.contains(3) {
+            imagePoints = Illustrations.twelvePoints1
+        } else if totalScore == 12 && scores.first == 3 && newScore == 3 && !scores.contains(2) {
+            imagePoints = Illustrations.twelvePoints2
+        }
     }
+    
+    func addScore(_ score: Int) {
+        scores.append(score)
+    }
+    
+    func removeLastScore(_ score: Int) {
+        if !scores.isEmpty && scores.last == score {
+            scores.removeLast()
+        }
+    }
+    
     
     func resetScore() {
-        score = 0
-        firstButton2 = false
-        firstButton3 = false
+        scores.removeAll()
+        imagePoints = Image("")
     }
 }
