@@ -77,6 +77,38 @@ class GameViewModel: ObservableObject {
             imagePoints = Illustrations.twelvePoints1
         } else if totalScore == 12 && scores.first == 3 && newScore == 3 && !scores.contains(2) {
             imagePoints = Illustrations.twelvePoints2
+        } else if totalScore == 12 && (scores.first == 2 || scores.first == 4 || scores.first == 5) && (newScore == 2 || newScore == 3 || newScore == 4 || newScore == 5) {
+            imagePoints = Illustrations.twelvePoints3
+        } else if totalScore == 12 && scores.first == 3 && (newScore == 2 || newScore == 3 || newScore == 4 || newScore == 5) {
+            imagePoints = Illustrations.twelvePoints4
+        } else if totalScore == 13 && (scores.first == 2 || scores.first == 4 || scores.first == 5) && (newScore == 2 || newScore == 3 || newScore == 4 || newScore == 5) {
+            imagePoints = Illustrations.thirteenPoints1
+        } else if totalScore == 13 && scores.first == 3 && (newScore == 2 || newScore == 4) {
+            imagePoints = Illustrations.thirteenPoints2
+        } else if totalScore == 13 && (scores.first == 2 || scores.first == 4 || scores.first == 5) && (newScore == 2 || newScore == 3 || newScore == 5) {
+            imagePoints = Illustrations.thirteenPoints3
+        } else if totalScore == 13 && scores.first == 3 && (newScore == 2 || newScore == 3 || newScore == 4 || newScore == 5) {
+            imagePoints = Illustrations.thirteenPoints4
+        } else if totalScore == 14 && (scores.first == 2 || scores.first == 4) && (newScore == 2 || newScore == 4) && !scores.contains(3) {
+            imagePoints = Illustrations.fourteenPoints1
+        } else if totalScore == 14 && (scores.first == 2 || scores.first == 4 || scores.first == 5) && (newScore == 2 || newScore == 3 || newScore == 4 || newScore == 5) && !scores.contains([3, 3, 3]) {
+            imagePoints = Illustrations.fourteenPoints2
+        } else if totalScore == 14 && scores.first == 3 && (newScore == 2 || newScore == 3 || newScore == 4 || newScore == 5) && !scores.contains([3, 3, 3]) {
+            imagePoints = Illustrations.fourteenPoints3
+        } else if totalScore == 14 && (scores.first == 2 || scores.first == 5) && newScore == 3 && !scores.contains([2, 2]) {
+            imagePoints = Illustrations.fourteenPoints4
+        } else if totalScore == 14 && scores.first == 3 && (newScore == 2 || newScore == 3 || newScore == 5) && !scores.contains([2, 2]) {
+            imagePoints = Illustrations.fourteenPoints5
+        } else if totalScore == 15 && scores.first == 3 && newScore == 3 && !scores.contains(2) {
+            imagePoints = Illustrations.fifteenPoints1
+        } else if totalScore == 15 && (scores.first == 2 || scores.first == 4 || scores.first == 5) && (newScore == 2 || newScore == 3 || newScore == 4 || newScore == 5) && !scores.contains([2, 2, 2, 2]) && !scores.contains([3, 3, 3, 3]) {
+            imagePoints = Illustrations.fifteenPoints2
+        } else if totalScore == 15 && scores.first == 3 && (newScore == 2 || newScore == 3 || newScore == 4 || newScore == 5) && !scores.contains([2, 2, 2, 2]) && !scores.contains([3, 3, 3, 3]) {
+            imagePoints = Illustrations.fifteenPoints3
+        } else if totalScore == 15 && (scores.first == 2 || scores.first == 4 || scores.first == 5) && (newScore == 2 || newScore == 3 || newScore == 4 || newScore == 5) && !scores.contains([3, 3]) {
+            imagePoints = Illustrations.fifteenPoints4
+        } else if totalScore == 15 && scores.first == 3 && (newScore == 2 || newScore == 4) && !scores.contains([3, 3]) {
+            imagePoints = Illustrations.fifteenPoints5
         }
     }
     
