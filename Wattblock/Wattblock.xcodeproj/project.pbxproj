@@ -48,6 +48,9 @@
 		72E7C18A2A9F3111006E2899 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 72E7C1892A9F3111006E2899 /* FirebaseFirestoreSwift */; };
 		72E7C18C2A9F32C2006E2899 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E7C18B2A9F32C2006E2899 /* UserRepository.swift */; };
 		72E7C18E2A9F335E006E2899 /* FireUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E7C18D2A9F335E006E2899 /* FireUser.swift */; };
+		72F068E22AD010B000214B75 /* AddPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F068E12AD010B000214B75 /* AddPlayerView.swift */; };
+		72F068E42AD010D400214B75 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F068E32AD010D400214B75 /* PlayerViewModel.swift */; };
+		72F068E82AD032A900214B75 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F068E72AD032A900214B75 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,9 @@
 		72E7C17E2A9F2F87006E2899 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		72E7C18B2A9F32C2006E2899 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		72E7C18D2A9F335E006E2899 /* FireUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireUser.swift; sourceTree = "<group>"; };
+		72F068E12AD010B000214B75 /* AddPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerView.swift; sourceTree = "<group>"; };
+		72F068E32AD010D400214B75 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		72F068E72AD032A900214B75 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,7 @@
 				72856D632AB04D81007384B8 /* StatisticView.swift */,
 				7215BE542A9DE61C00534505 /* PlayerView.swift */,
 				7215BE562A9DE62800534505 /* RuleView.swift */,
+				72F068E12AD010B000214B75 /* AddPlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 			children = (
 				7238EC4E2A9E0E980018EB47 /* Enums */,
 				72E7C18D2A9F335E006E2899 /* FireUser.swift */,
+				72F068E72AD032A900214B75 /* Player.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 				723CD4102A9F48C0005CAD6B /* AuthenticationViewModel.swift */,
 				723CD4232A9F6F6C005CAD6B /* UserViewModel.swift */,
 				7252EAF92AB3197600C1D6FC /* GameViewModel.swift */,
+				72F068E32AD010D400214B75 /* PlayerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -358,6 +367,7 @@
 				725EFF9D2AB9D48D005C683C /* TableView.swift in Sources */,
 				7270DBFC2AB1E0BA002751E0 /* GameButton.swift in Sources */,
 				7215BE532A9DE60E00534505 /* EditProfileView.swift in Sources */,
+				72F068E22AD010B000214B75 /* AddPlayerView.swift in Sources */,
 				7252EAFA2AB3197600C1D6FC /* GameViewModel.swift in Sources */,
 				723CD4182A9F5F4C005CAD6B /* Colors.swift in Sources */,
 				7215BE472A9DE5AB00534505 /* FirebaseManager.swift in Sources */,
@@ -371,6 +381,7 @@
 				720CFA0E2AA0AEE700FF372F /* SecureFieldAuth.swift in Sources */,
 				723CD41C2A9F6045005CAD6B /* Values.swift in Sources */,
 				720CFA0C2AA095A800FF372F /* OutlinedIconButton.swift in Sources */,
+				72F068E82AD032A900214B75 /* Player.swift in Sources */,
 				720CFA0A2AA0925300FF372F /* Strings.swift in Sources */,
 				728049C02AA8914D00698F51 /* NavigationTitle.swift in Sources */,
 				723CD4242A9F6F6C005CAD6B /* UserViewModel.swift in Sources */,
@@ -386,6 +397,7 @@
 				723CD40D2A9F40EA005CAD6B /* AuthenticationMode.swift in Sources */,
 				723CD41A2A9F5F5F005CAD6B /* Illustrations.swift in Sources */,
 				7238EC512A9E0F360018EB47 /* OutlinedButton.swift in Sources */,
+				72F068E42AD010D400214B75 /* PlayerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,9 @@ struct PlayerView: View {
                     .edgesIgnoringSafeArea(.top)
                 Colors.backgroundSettings
                 VStack {
+                    NavigationTitle(title: Strings.players, sfSymbol: SFSymbols.personPlus) {
+                        AddPlayerView()
+                    }
                     Form {
                         Section {
                             ForEach(0..<10) { number in
@@ -25,8 +28,6 @@ struct PlayerView: View {
                         }
                     }
                 }
-                .navigationTitle(Strings.players)
-                .padding(.top, Values.padding4)
             }
         }
     }

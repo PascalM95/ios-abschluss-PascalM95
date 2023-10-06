@@ -26,7 +26,6 @@ struct SettingsView: View {
                                     Text(Strings.profile)
                                 }
                             }
-
                         }
                         
                         Section {

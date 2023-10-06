@@ -19,7 +19,9 @@ struct HomeView: View {
                 Colors.background
                 
                 VStack {
-                    NavigationTitle(title: Strings.appName)
+                    NavigationTitle(title: Strings.appName, sfSymbol: SFSymbols.gearFill) {
+                        SettingsView()
+                    }
                     
                     Spacer()
                     NavigationLink(destination: GameView(gameMode: .vs1)) {

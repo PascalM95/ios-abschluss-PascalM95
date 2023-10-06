@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavigationTitle: View {
+struct NavigationTitle<Content: View>: View {
     
     var body: some View {
         HStack {
@@ -20,7 +20,7 @@ struct NavigationTitle: View {
             NavigationLink {
                 SettingsView()
             } label: {
-                SFSymbols.gearFill
+                sfSymbol
                     .font(Fonts.title1)
                     .foregroundColor(Colors.accentColor)
             }
@@ -37,10 +37,20 @@ struct NavigationTitle: View {
     
     
     let title: String
+    let sfSymbol: Image
+    let destination: Content
+    
+    init(title: String, sfSymbol: Image, @ViewBuilder destination: () -> Content) {
+        self.title = title
+        self.sfSymbol = sfSymbol
+        self.destination = destination()
+    }
 }
 
 struct NavigationTitle_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationTitle(title: Strings.appName)
+        NavigationTitle(title: Strings.appName, sfSymbol: SFSymbols.gearFill) {
+            SettingsView()
+        }
     }
 }
