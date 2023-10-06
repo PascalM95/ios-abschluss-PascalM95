@@ -17,4 +17,5 @@ enum SFSymbols {
     static let personCircle = Image(systemName: "person.circle")
     static let reset = Image(systemName: "arrow.counterclockwise")
     static let personPlus = Image(systemName: "person.fill.badge.plus")
+    static let trash = Image(systemName: "trash.fill")
 }
