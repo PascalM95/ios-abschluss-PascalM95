@@ -12,7 +12,7 @@ struct OutlinedButton: View {
     var body: some View {
         Button(action: action) {
             Text(title)
-                .font(.headline)
+                .font(Fonts.headline)
                 .frame(maxWidth: .infinity)
         }
         .padding(.vertical, Values.padding16)

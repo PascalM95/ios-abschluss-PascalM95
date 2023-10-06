@@ -14,6 +14,7 @@ struct LoginView: View {
             Colors.bavarianBlue
                 .edgesIgnoringSafeArea(.top)
             Colors.background
+            
             VStack(spacing: 0) {
                 Illustrations.logo
                     .resizable()

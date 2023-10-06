@@ -19,24 +19,35 @@ struct HomeView: View {
                 Colors.background
                 
                 VStack {
-                    NavigationTitle(title: Strings.appName)
+                    NavigationTitle(title: Strings.appName, sfSymbol: SFSymbols.gearFill) {
+                        SettingsView()
+                    }
                     
                     Spacer()
+                    NavigationLink(destination: GameView(gameMode: .vs1)) {
+                        OutlinedIconButton(icon: Illustrations.acorn, title: Strings.vs1)
+                            .padding(.horizontal, Values.padding24)
+                    }
                     
-                    OutlinedIconButton(icon: Illustrations.acorn, title: Strings.vs1, action: {})
-                        .padding(.horizontal, Values.padding24)
+                    NavigationLink(destination: GameView(gameMode: .vs2)) {
+                        OutlinedIconButton(icon: Illustrations.grass, title: Strings.vs2)
+                            .padding(.horizontal, Values.padding24)
+                    }
                     
-                    OutlinedIconButton(icon: Illustrations.grass, title: Strings.vs2, action: {})
-                        .padding(.horizontal, Values.padding24)
+                    NavigationLink(destination: StatisticView()) {
+                        OutlinedIconButton(icon: Illustrations.heart, title: Strings.stats)
+                            .padding(.horizontal, Values.padding24)
+                    }
                     
-                    OutlinedIconButton(icon: Illustrations.heart, title: Strings.stats, action: {})
-                        .padding(.horizontal, Values.padding24)
+                    NavigationLink(destination: PlayerView()) {
+                        OutlinedIconButton(icon: Illustrations.bell, title: Strings.players)
+                            .padding(.horizontal, Values.padding24)
+                    }
                     
-                    OutlinedIconButton(icon: Illustrations.bell, title: Strings.players, action: {})
-                        .padding(.horizontal, Values.padding24)
-                    
-                    OutlinedIconButton(icon: Illustrations.acorn, title: Strings.rules, action: {})
-                        .padding(.horizontal, Values.padding24)
+                    NavigationLink(destination: RuleView()) {
+                        OutlinedIconButton(icon: Illustrations.acorn, title: Strings.rules)
+                            .padding(.horizontal, Values.padding24)
+                    }
                     
                     Spacer()
                     Spacer()

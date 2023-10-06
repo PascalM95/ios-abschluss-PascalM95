@@ -8,9 +8,30 @@
 import SwiftUI
 
 struct PlayerView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ZStack {
+                Colors.bavarianBlue
+                    .edgesIgnoringSafeArea(.top)
+                Colors.backgroundSettings
+                VStack {
+                    NavigationTitle(title: Strings.players, sfSymbol: SFSymbols.personPlus) {
+                        AddPlayerView()
+                    }
+                    Form {
+                        Section {
+                            ForEach(0..<10) { number in
+                            Text("Name")
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
     }
+    
 }
 
 struct PlayerView_Previews: PreviewProvider {
