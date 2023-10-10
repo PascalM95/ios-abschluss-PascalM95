@@ -44,6 +44,10 @@ enum Strings {
     static let name = "Name"
     static let save = "Speichern"
     static let delete = "Löschen"
+    static let choosePlayer = "Spielerwahl"
+    static let choosePlayerHead = "Wähle dich, deinen Mitspieler und deine Gegner aus:"
+    static let chooseEnemy = "Wähle dich und deinen Gegner aus:"
+    static let done = "Weiter"
     
     static let rulesPart1 = "Regeln des Bayerischen Wattens"
     static let rulesPart2 = "An dem Spiel nehmen vier Spieler teil, wobei die Gegenübersitzenden jeweils zusammenspielen. Es wird meist mit dem Deutschen Blatt oder einer regionalen Abwandlung gespielt, wobei jeder Spielteilnehmer fünf Karten erhält. Ziel jedes Paares ist es, pro Spiel drei Stiche zu erzielen und damit zu gewinnen."

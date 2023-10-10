@@ -69,7 +69,7 @@ struct SettingsView: View {
     // MARK: - Variables
     
     @State private var showSheet = false
-    @EnvironmentObject var userViewModel: UserViewModel
+    @EnvironmentObject private var userViewModel: UserViewModel
     
 }
 

@@ -69,8 +69,6 @@ struct RuleView: View {
     
 }
 
-struct RuleView_Previews: PreviewProvider {
-    static var previews: some View {
-        RuleView()
-    }
+#Preview {
+    RuleView()
 }

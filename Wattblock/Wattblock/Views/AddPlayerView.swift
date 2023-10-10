@@ -23,7 +23,6 @@ struct AddPlayerView: View {
                         .foregroundColor(Colors.bavarianBlue)
                 }
             }
-            
         }
     }
     

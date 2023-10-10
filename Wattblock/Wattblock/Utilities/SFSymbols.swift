@@ -18,4 +18,5 @@ enum SFSymbols {
     static let reset = Image(systemName: "arrow.counterclockwise")
     static let personPlus = Image(systemName: "person.fill.badge.plus")
     static let trash = Image(systemName: "trash.fill")
+    static let checkmark = Image(systemName: "checkmark")
 }

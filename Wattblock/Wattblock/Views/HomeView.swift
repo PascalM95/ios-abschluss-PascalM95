@@ -24,14 +24,19 @@ struct HomeView: View {
                     }
                     
                     Spacer()
-                    NavigationLink(destination: GameView(gameMode: .vs1)) {
+                    
+                    NavigationLink(destination: ChoosePlayerView(gameMode: $selectedGameMode, playerCount: $playerCount)) {
                         OutlinedIconButton(icon: Illustrations.acorn, title: Strings.vs1)
                             .padding(.horizontal, Values.padding24)
                     }
                     
-                    NavigationLink(destination: GameView(gameMode: .vs2)) {
+                    NavigationLink(destination: ChoosePlayerView(gameMode: $selectedGameMode, playerCount: $playerCount)) {
                         OutlinedIconButton(icon: Illustrations.grass, title: Strings.vs2)
                             .padding(.horizontal, Values.padding24)
+                    }
+                    .onTapGesture {
+                        selectedGameMode = .vs2
+                        playerCount = 4
                     }
                     
                     NavigationLink(destination: StatisticView()) {
@@ -60,13 +65,13 @@ struct HomeView: View {
     
     // MARK: - Variables
     
-    @EnvironmentObject var userViewModel: UserViewModel
+    @EnvironmentObject private var userViewModel: UserViewModel
+    @StateObject private var playerViewModel = PlayerViewModel()
+    @State private var selectedGameMode: GameMode = .vs1
+    @State private var playerCount: Int = 2
     
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-            .environmentObject(UserViewModel())
-    }
+#Preview {
+    HomeView()
 }

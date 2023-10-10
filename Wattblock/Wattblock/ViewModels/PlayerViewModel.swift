@@ -21,7 +21,7 @@ class PlayerViewModel: ObservableObject {
     
     @Published var players: [Player] = []
     @Published var showSheet = false
-    
+    @Published var selectedPlayers: [Player] = []
     
     
     // MARK: - Functions
@@ -58,14 +58,32 @@ class PlayerViewModel: ObservableObject {
                 print(error.localizedDescription)
             }
         }
+        fetchPlayers()
     }
     
-    func deletePlayer() {
-        
+    func deletePlayer(with id: String) {
+        let database = Firestore.firestore()
+        database.collection("Players").document(id).delete()
     }
     
     func sortPlayers() {
         players.sort { $0.name < $1.name }
+    }
+    
+    func togglePlayerSelection(_ player: Player, _ playerCount: Int) {
+        if selectedPlayers.contains(player) {
+            if let index = selectedPlayers.lastIndex(of: player) {
+                selectedPlayers.remove(at: index)
+            }
+        } else {
+            if selectedPlayers.count < (playerCount) {
+                selectedPlayers.append(player)
+            }
+        }
+    }
+    
+    func clearSelection() {
+        selectedPlayers.removeAll()
     }
     
 }

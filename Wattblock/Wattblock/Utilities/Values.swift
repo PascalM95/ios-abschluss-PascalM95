@@ -31,6 +31,7 @@ struct Values {
     
     static let borderWidth: CGFloat = 2
     
+    static let spacing0: CGFloat = 0
     static let spacing12: CGFloat = 12
     
     static let gameButtonSize: CGFloat = 54
