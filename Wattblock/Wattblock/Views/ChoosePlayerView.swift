@@ -46,7 +46,7 @@ struct ChoosePlayerView: View {
                                 }
                             }
                         }
-                        NavigationLink(destination: GameView(gameMode: $gameMode)) {
+                        NavigationLink(destination: GameView(gameMode: $gameMode).environmentObject(playerViewModel)) {
                             Text(Strings.done)
                                 .foregroundStyle(Colors.bavarianBlue)
                         }
@@ -54,6 +54,9 @@ struct ChoosePlayerView: View {
                 }
             }
             .navigationTitle(Strings.choosePlayer)
+        }
+        .onAppear {
+            playerViewModel.clearSelection()
         }
     }
     
@@ -63,11 +66,11 @@ struct ChoosePlayerView: View {
     
     @EnvironmentObject private var playerViewModel: PlayerViewModel
     @Binding var gameMode: GameMode
-    @Binding var playerCount: Int
+    let playerCount: Int
     
 }
 
 #Preview {
-    ChoosePlayerView(gameMode: .constant(.vs2), playerCount: .constant(4))
+    ChoosePlayerView(gameMode: .constant(.vs2), playerCount: 4)
         .environmentObject(PlayerViewModel())
 }

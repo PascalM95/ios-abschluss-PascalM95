@@ -29,7 +29,7 @@ class PlayerViewModel: ObservableObject {
     func fetchPlayers() {
         players.removeAll()
         let database = Firestore.firestore()
-        let reference = database.collection("Players")
+        let reference = database.collection("players")
         reference.getDocuments { snapshot, error in
             guard error == nil else {
                 print(error!.localizedDescription)
@@ -52,8 +52,9 @@ class PlayerViewModel: ObservableObject {
     
     func addPlayer(name: String) {
         let database = Firestore.firestore()
-        let reference = database.collection("Players").document(name)
-        reference.setData(["id": UUID().uuidString, "name": name]) { error in
+        let id = UUID().uuidString
+        let reference = database.collection("players").document(id)
+        reference.setData(["id": id, "name": name]) { error in
             if let error = error {
                 print(error.localizedDescription)
             }
@@ -63,7 +64,8 @@ class PlayerViewModel: ObservableObject {
     
     func deletePlayer(with id: String) {
         let database = Firestore.firestore()
-        database.collection("Players").document(id).delete()
+        database.collection("players").document(id).delete()
+        fetchPlayers()
     }
     
     func sortPlayers() {

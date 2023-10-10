@@ -21,22 +21,20 @@ struct HomeView: View {
                 VStack {
                     NavigationTitle(title: Strings.appName, sfSymbol: SFSymbols.gearFill) {
                         SettingsView()
+                            .environmentObject(userViewModel)
                     }
                     
                     Spacer()
                     
-                    NavigationLink(destination: ChoosePlayerView(gameMode: $selectedGameMode, playerCount: $playerCount)) {
+                    NavigationLink(destination: ChoosePlayerView(gameMode: $selectedGameMode, playerCount: 2).environmentObject(playerViewModel)) {
                         OutlinedIconButton(icon: Illustrations.acorn, title: Strings.vs1)
                             .padding(.horizontal, Values.padding24)
                     }
                     
-                    NavigationLink(destination: ChoosePlayerView(gameMode: $selectedGameMode, playerCount: $playerCount)) {
+                    
+                    NavigationLink(destination: ChoosePlayerView(gameMode: $selectedGameMode, playerCount: 4).environmentObject(playerViewModel)) {
                         OutlinedIconButton(icon: Illustrations.grass, title: Strings.vs2)
                             .padding(.horizontal, Values.padding24)
-                    }
-                    .onTapGesture {
-                        selectedGameMode = .vs2
-                        playerCount = 4
                     }
                     
                     NavigationLink(destination: StatisticView()) {
@@ -44,7 +42,7 @@ struct HomeView: View {
                             .padding(.horizontal, Values.padding24)
                     }
                     
-                    NavigationLink(destination: PlayerView()) {
+                    NavigationLink(destination: PlayerView().environmentObject(playerViewModel)) {
                         OutlinedIconButton(icon: Illustrations.bell, title: Strings.players)
                             .padding(.horizontal, Values.padding24)
                     }
@@ -68,10 +66,10 @@ struct HomeView: View {
     @EnvironmentObject private var userViewModel: UserViewModel
     @StateObject private var playerViewModel = PlayerViewModel()
     @State private var selectedGameMode: GameMode = .vs1
-    @State private var playerCount: Int = 2
     
 }
 
 #Preview {
     HomeView()
+        .environmentObject(UserViewModel())
 }

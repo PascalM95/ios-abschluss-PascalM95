@@ -22,11 +22,12 @@ struct PlayerView: View {
                     List(playerViewModel.players) { player in
                         Text(player.name)
                             .swipeActions {
-                                Button(Strings.delete) {
+                                Button(role: .destructive) {
                                     playerViewModel.deletePlayer(with: player.id)
+                                } label: {
+                                    Text(Strings.delete)
                                 }
                             }
-                            .tint(.red)
                     }
                 }
                 .sheet(isPresented: $playerViewModel.showSheet, content: {
