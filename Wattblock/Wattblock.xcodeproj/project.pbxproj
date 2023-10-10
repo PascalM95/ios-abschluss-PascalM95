@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720A6DF12AD589AD0066DD53 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6DF02AD589AD0066DD53 /* HTTPError.swift */; };
+		720A6DF32AD589F80066DD53 /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6DF22AD589F80066DD53 /* ApiRepository.swift */; };
+		720A6DF52AD58B220066DD53 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6DF42AD58B220066DD53 /* UserName.swift */; };
 		720CFA0A2AA0925300FF372F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA092AA0925300FF372F /* Strings.swift */; };
 		720CFA0C2AA095A800FF372F /* OutlinedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA0B2AA095A800FF372F /* OutlinedIconButton.swift */; };
 		720CFA0E2AA0AEE700FF372F /* SecureFieldAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA0D2AA0AEE700FF372F /* SecureFieldAuth.swift */; };
@@ -56,6 +59,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		720A6DF02AD589AD0066DD53 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		720A6DF22AD589F80066DD53 /* ApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
+		720A6DF42AD58B220066DD53 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
 		720CFA092AA0925300FF372F /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		720CFA0B2AA095A800FF372F /* OutlinedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedIconButton.swift; sourceTree = "<group>"; };
 		720CFA0D2AA0AEE700FF372F /* SecureFieldAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldAuth.swift; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 				7238EC4E2A9E0E980018EB47 /* Enums */,
 				72E7C18D2A9F335E006E2899 /* FireUser.swift */,
 				72F068E72AD032A900214B75 /* Player.swift */,
+				720A6DF42AD58B220066DD53 /* UserName.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				72E7C18B2A9F32C2006E2899 /* UserRepository.swift */,
+				720A6DF22AD589F80066DD53 /* ApiRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 				723CD40C2A9F40EA005CAD6B /* AuthenticationMode.swift */,
 				725EFF9E2AB9D537005C683C /* GameMode.swift */,
 				72578B292ABC4428001E88DE /* Team.swift */,
+				720A6DF02AD589AD0066DD53 /* HTTPError.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -389,17 +398,20 @@
 				723CD41C2A9F6045005CAD6B /* Values.swift in Sources */,
 				720CFA0C2AA095A800FF372F /* OutlinedIconButton.swift in Sources */,
 				72F068E82AD032A900214B75 /* Player.swift in Sources */,
+				720A6DF32AD589F80066DD53 /* ApiRepository.swift in Sources */,
 				720CFA0A2AA0925300FF372F /* Strings.swift in Sources */,
 				728049C02AA8914D00698F51 /* NavigationTitle.swift in Sources */,
 				723CD4242A9F6F6C005CAD6B /* UserViewModel.swift in Sources */,
 				7215BE552A9DE61C00534505 /* PlayerView.swift in Sources */,
 				7215BE572A9DE62800534505 /* RuleView.swift in Sources */,
 				723CD4162A9F5F02005CAD6B /* SFSymbols.swift in Sources */,
+				720A6DF12AD589AD0066DD53 /* HTTPError.swift in Sources */,
 				723CD40F2A9F488A005CAD6B /* TextFieldAuth.swift in Sources */,
 				7215BE4D2A9DE5E700534505 /* HomeView.swift in Sources */,
 				72856D642AB04D81007384B8 /* StatisticView.swift in Sources */,
 				72AD3B4B2AD048990050B810 /* NavTitleAction.swift in Sources */,
 				7215BE492A9DE5CA00534505 /* LoginView.swift in Sources */,
+				720A6DF52AD58B220066DD53 /* UserName.swift in Sources */,
 				7215BE302A9DCB7600534505 /* WattblockApp.swift in Sources */,
 				7215BE4F2A9DE5F400534505 /* GameView.swift in Sources */,
 				723CD40D2A9F40EA005CAD6B /* AuthenticationMode.swift in Sources */,

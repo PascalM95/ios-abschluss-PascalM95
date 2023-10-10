@@ -46,11 +46,12 @@ struct EditProfileView: View {
     // MARK: - Variables
     
     @State private var text = ""
-    
+    @EnvironmentObject var userViewModel: UserViewModel
 }
 
 struct EditProfileView_Previews: PreviewProvider {
     static var previews: some View {
         EditProfileView()
+            .environmentObject(UserViewModel())
     }
 }
