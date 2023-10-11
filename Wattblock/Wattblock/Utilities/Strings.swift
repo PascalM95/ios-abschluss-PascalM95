@@ -13,6 +13,7 @@ enum Strings {
     static let vs2 = "2 vs 2"
     static let stats = "Statistiken"
     static let players = "Spieler"
+    static let weather = "Wetter"
     static let rules = "Regeln"
     static let settings = "Einstellungen"
     static let profile = "Profil"

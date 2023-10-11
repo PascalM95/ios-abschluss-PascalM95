@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		720A6DF12AD589AD0066DD53 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6DF02AD589AD0066DD53 /* HTTPError.swift */; };
-		720A6DF32AD589F80066DD53 /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6DF22AD589F80066DD53 /* ApiRepository.swift */; };
-		720A6DF52AD58B220066DD53 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6DF42AD58B220066DD53 /* UserName.swift */; };
+		720A6DF72AD6841E0066DD53 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6DF62AD6841E0066DD53 /* WeatherView.swift */; };
+		720A6DF92AD684F10066DD53 /* WheatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6DF82AD684F10066DD53 /* WheatherViewModel.swift */; };
+		720A6DFF2AD6882F0066DD53 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6DFE2AD6882F0066DD53 /* WeatherRepository.swift */; };
+		720A6E012AD688560066DD53 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6E002AD688560066DD53 /* Weather.swift */; };
 		720CFA0A2AA0925300FF372F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA092AA0925300FF372F /* Strings.swift */; };
 		720CFA0C2AA095A800FF372F /* OutlinedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA0B2AA095A800FF372F /* OutlinedIconButton.swift */; };
 		720CFA0E2AA0AEE700FF372F /* SecureFieldAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CFA0D2AA0AEE700FF372F /* SecureFieldAuth.swift */; };
@@ -60,8 +62,10 @@
 
 /* Begin PBXFileReference section */
 		720A6DF02AD589AD0066DD53 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
-		720A6DF22AD589F80066DD53 /* ApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
-		720A6DF42AD58B220066DD53 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
+		720A6DF62AD6841E0066DD53 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		720A6DF82AD684F10066DD53 /* WheatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherViewModel.swift; sourceTree = "<group>"; };
+		720A6DFE2AD6882F0066DD53 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		720A6E002AD688560066DD53 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		720CFA092AA0925300FF372F /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		720CFA0B2AA095A800FF372F /* OutlinedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedIconButton.swift; sourceTree = "<group>"; };
 		720CFA0D2AA0AEE700FF372F /* SecureFieldAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldAuth.swift; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 				7215BE562A9DE62800534505 /* RuleView.swift */,
 				72F068E12AD010B000214B75 /* AddPlayerView.swift */,
 				7278AF892AD42C63000977DC /* ChoosePlayerView.swift */,
+				720A6DF62AD6841E0066DD53 /* WeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,7 +201,7 @@
 				7238EC4E2A9E0E980018EB47 /* Enums */,
 				72E7C18D2A9F335E006E2899 /* FireUser.swift */,
 				72F068E72AD032A900214B75 /* Player.swift */,
-				720A6DF42AD58B220066DD53 /* UserName.swift */,
+				720A6E002AD688560066DD53 /* Weather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				723CD4232A9F6F6C005CAD6B /* UserViewModel.swift */,
 				7252EAF92AB3197600C1D6FC /* GameViewModel.swift */,
 				72F068E32AD010D400214B75 /* PlayerViewModel.swift */,
+				720A6DF82AD684F10066DD53 /* WheatherViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -216,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				72E7C18B2A9F32C2006E2899 /* UserRepository.swift */,
-				720A6DF22AD589F80066DD53 /* ApiRepository.swift */,
+				720A6DFE2AD6882F0066DD53 /* WeatherRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				720A6DFF2AD6882F0066DD53 /* WeatherRepository.swift in Sources */,
 				723CD4222A9F6AE2005CAD6B /* TextButton.swift in Sources */,
 				725EFF9D2AB9D48D005C683C /* TableView.swift in Sources */,
 				7270DBFC2AB1E0BA002751E0 /* GameButton.swift in Sources */,
@@ -396,9 +403,9 @@
 				723CD41E2A9F6138005CAD6B /* Fonts.swift in Sources */,
 				720CFA0E2AA0AEE700FF372F /* SecureFieldAuth.swift in Sources */,
 				723CD41C2A9F6045005CAD6B /* Values.swift in Sources */,
+				720A6DF72AD6841E0066DD53 /* WeatherView.swift in Sources */,
 				720CFA0C2AA095A800FF372F /* OutlinedIconButton.swift in Sources */,
 				72F068E82AD032A900214B75 /* Player.swift in Sources */,
-				720A6DF32AD589F80066DD53 /* ApiRepository.swift in Sources */,
 				720CFA0A2AA0925300FF372F /* Strings.swift in Sources */,
 				728049C02AA8914D00698F51 /* NavigationTitle.swift in Sources */,
 				723CD4242A9F6F6C005CAD6B /* UserViewModel.swift in Sources */,
@@ -411,12 +418,13 @@
 				72856D642AB04D81007384B8 /* StatisticView.swift in Sources */,
 				72AD3B4B2AD048990050B810 /* NavTitleAction.swift in Sources */,
 				7215BE492A9DE5CA00534505 /* LoginView.swift in Sources */,
-				720A6DF52AD58B220066DD53 /* UserName.swift in Sources */,
+				720A6E012AD688560066DD53 /* Weather.swift in Sources */,
 				7215BE302A9DCB7600534505 /* WattblockApp.swift in Sources */,
 				7215BE4F2A9DE5F400534505 /* GameView.swift in Sources */,
 				723CD40D2A9F40EA005CAD6B /* AuthenticationMode.swift in Sources */,
 				723CD41A2A9F5F5F005CAD6B /* Illustrations.swift in Sources */,
 				7238EC512A9E0F360018EB47 /* OutlinedButton.swift in Sources */,
+				720A6DF92AD684F10066DD53 /* WheatherViewModel.swift in Sources */,
 				72F068E42AD010D400214B75 /* PlayerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

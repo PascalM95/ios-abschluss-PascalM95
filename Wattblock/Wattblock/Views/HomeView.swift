@@ -37,8 +37,8 @@ struct HomeView: View {
                             .padding(.horizontal, Values.padding24)
                     }
                     
-                    NavigationLink(destination: StatisticView()) {
-                        OutlinedIconButton(icon: Illustrations.heart, title: Strings.stats)
+                    NavigationLink(destination: WeatherView()) {
+                        OutlinedIconButton(icon: Illustrations.heart, title: Strings.weather)
                             .padding(.horizontal, Values.padding24)
                     }
                     
