@@ -15,6 +15,7 @@ struct SettingsView: View {
                 Colors.bavarianBlue
                     .edgesIgnoringSafeArea(.top)
                 Colors.backgroundSettings
+                
                 VStack {
                     Form {
                         Section {
@@ -28,28 +29,6 @@ struct SettingsView: View {
                             }
                         }
                         
-                        Section {
-                            
-                        }
-                        
-                        Section {
-                            Button {
-                                self.showSheet.toggle()
-                            } label: {
-                                HStack {
-                                    Text(Strings.termsOfUse)
-                                }
-                            }
-                            
-                            Button {
-                                self.showSheet.toggle()
-                            } label: {
-                                HStack {
-                                    Text(Strings.dataProtection)
-                                }
-                            }
-                        }
-                        
                         Button(Strings.signOut, action: userViewModel.logout)
                             .foregroundColor(.red)
                     }
@@ -57,10 +36,6 @@ struct SettingsView: View {
                 .navigationTitle(Strings.settings)
                 .padding(.top, Values.padding4)
             }
-            .sheet(isPresented: $showSheet) {
-               
-            }
-            
         }
     }
     
@@ -68,8 +43,7 @@ struct SettingsView: View {
     
     // MARK: - Variables
     
-    @State private var showSheet = false
-    @EnvironmentObject var userViewModel: UserViewModel
+    @EnvironmentObject private var userViewModel: UserViewModel
     
 }
 

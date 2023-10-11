@@ -17,15 +17,12 @@ struct EditProfileView: View {
             
             VStack {
                 Form {
-                    Section(header: Text("Benutzername")) {
-                        Text("WattPro123")
-                        TextField("Neuer Benutzername", text: $text)
-                    }
                     Section(header: Text("Email ändern")) {
                         Text("example@text.com")
                         TextField("Neue Email", text: $text)
                         TextField("Neue Email bestätigen", text: $text)
                     }
+                    
                     Section(header: Text("Passwort ändern")) {
                         SecureField("Altes Passwort", text: $text)
                         SecureField("Neues Passwort", text: $text)
@@ -46,11 +43,12 @@ struct EditProfileView: View {
     // MARK: - Variables
     
     @State private var text = ""
-    
+    @EnvironmentObject var userViewModel: UserViewModel
 }
 
 struct EditProfileView_Previews: PreviewProvider {
     static var previews: some View {
         EditProfileView()
+            .environmentObject(UserViewModel())
     }
 }

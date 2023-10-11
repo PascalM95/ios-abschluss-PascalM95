@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Player: Identifiable {
+struct Player: Identifiable, Hashable {
     var id: String
     var name: String
 }

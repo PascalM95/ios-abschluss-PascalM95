@@ -8,9 +8,30 @@
 import SwiftUI
 
 struct AddPlayerView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Form {
+                Section {
+                    TextField(Strings.name, text: $newPlayer)
+                }
+                Button {
+                    playerViewModel.addPlayer(name: newPlayer)
+                    playerViewModel.showSheet = false
+                } label: {
+                    Text(Strings.save)
+                        .foregroundColor(Colors.bavarianBlue)
+                }
+            }
+        }
     }
+    
+    
+    
+    // MARK: - Variables
+    
+    @EnvironmentObject var playerViewModel: PlayerViewModel
+    @State private var newPlayer = ""
 }
 
 #Preview {

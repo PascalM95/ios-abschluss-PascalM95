@@ -21,32 +21,39 @@ struct HomeView: View {
                 VStack {
                     NavigationTitle(title: Strings.appName, sfSymbol: SFSymbols.gearFill) {
                         SettingsView()
+                            .environmentObject(userViewModel)
                     }
                     
                     Spacer()
-                    NavigationLink(destination: GameView(gameMode: .vs1)) {
+                    
+                    NavigationLink(destination: ChoosePlayerView(gameMode: .vs1, playerCount: 2).environmentObject(playerViewModel)) {
                         OutlinedIconButton(icon: Illustrations.acorn, title: Strings.vs1)
                             .padding(.horizontal, Values.padding24)
                     }
                     
-                    NavigationLink(destination: GameView(gameMode: .vs2)) {
+                    NavigationLink(destination: ChoosePlayerView(gameMode: .vs2, playerCount: 4).environmentObject(playerViewModel)) {
                         OutlinedIconButton(icon: Illustrations.grass, title: Strings.vs2)
                             .padding(.horizontal, Values.padding24)
                     }
                     
-                    NavigationLink(destination: StatisticView()) {
-                        OutlinedIconButton(icon: Illustrations.heart, title: Strings.stats)
+                    NavigationLink(destination: WeatherView()) {
+                        OutlinedIconButton(icon: Illustrations.heart, title: Strings.weather)
                             .padding(.horizontal, Values.padding24)
                     }
                     
-                    NavigationLink(destination: PlayerView()) {
+                    NavigationLink(destination: PlayerView().environmentObject(playerViewModel)) {
                         OutlinedIconButton(icon: Illustrations.bell, title: Strings.players)
                             .padding(.horizontal, Values.padding24)
                     }
                     
-                    NavigationLink(destination: RuleView()) {
+                    Button {
+                        isRuleViewPresented.toggle()
+                    } label: {
                         OutlinedIconButton(icon: Illustrations.acorn, title: Strings.rules)
                             .padding(.horizontal, Values.padding24)
+                    }
+                    .sheet(isPresented: $isRuleViewPresented) {
+                        RuleView()
                     }
                     
                     Spacer()
@@ -60,13 +67,13 @@ struct HomeView: View {
     
     // MARK: - Variables
     
-    @EnvironmentObject var userViewModel: UserViewModel
+    @EnvironmentObject private var userViewModel: UserViewModel
+    @StateObject private var playerViewModel = PlayerViewModel()
+    @State private var isRuleViewPresented = false
     
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-            .environmentObject(UserViewModel())
-    }
+#Preview {
+    HomeView()
+        .environmentObject(UserViewModel())
 }

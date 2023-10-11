@@ -64,13 +64,12 @@ struct RuleView: View {
             }
             .navigationTitle(Strings.rules)
             .scrollIndicators(.never)
+            .padding(.top)
         }
     }
     
 }
 
-struct RuleView_Previews: PreviewProvider {
-    static var previews: some View {
-        RuleView()
-    }
+#Preview {
+    RuleView()
 }

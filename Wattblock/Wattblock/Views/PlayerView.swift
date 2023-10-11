@@ -15,27 +15,41 @@ struct PlayerView: View {
                 Colors.bavarianBlue
                     .edgesIgnoringSafeArea(.top)
                 Colors.backgroundSettings
-                VStack {
-                    NavigationTitle(title: Strings.players, sfSymbol: SFSymbols.personPlus) {
-                        AddPlayerView()
+                VStack(spacing: Values.spacing0) {
+                    NavTitleAction(title: Strings.players, sfSymbol: SFSymbols.plus) {
+                        playerViewModel.showSheet = true
                     }
-                    Form {
-                        Section {
-                            ForEach(0..<10) { number in
-                            Text("Name")
+                    List(playerViewModel.players) { player in
+                        Text(player.name)
+                            .swipeActions {
+                                Button(role: .destructive) {
+                                    playerViewModel.deletePlayer(with: player.id)
+                                } label: {
+                                    Text(Strings.delete)
+                                }
                             }
-                            
-                        }
                     }
                 }
+                .sheet(isPresented: $playerViewModel.showSheet, content: {
+                    AddPlayerView()
+                })
+                .environmentObject(playerViewModel)
             }
         }
     }
+    
+    
+    
+    // MARK: - Variables
+    
+    @EnvironmentObject private var playerViewModel: PlayerViewModel
     
 }
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
         PlayerView()
+            .environmentObject(PlayerViewModel())
     }
 }
+

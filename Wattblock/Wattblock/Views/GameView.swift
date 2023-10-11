@@ -18,7 +18,7 @@ struct GameView: View {
                 
                 VStack {
                     HStack(spacing: 0) {
-                        TableView(gameMode: gameMode, name1: "Sepp", name2: "Franz", team: .one)
+                        TableView(gameMode: gameMode, name1: playerViewModel.selectedPlayers.first?.name ?? "Sepp", name2: playerViewModel.selectedPlayers.count > 2 ? playerViewModel.selectedPlayers[2].name : "Franz", team: .one)
                             .environmentObject(gameViewModel1)
                         
                         Divider()
@@ -26,7 +26,7 @@ struct GameView: View {
                             .background(Colors.dividerColor)
                             .padding(.vertical, Values.padding4)
                         
-                        TableView(gameMode: gameMode, name1: "Hans", name2: "Peter", team: .two)
+                        TableView(gameMode: gameMode, name1: playerViewModel.selectedPlayers.count > 1 ? playerViewModel.selectedPlayers[1].name : "Hans", name2: playerViewModel.selectedPlayers.count > 3 ? playerViewModel.selectedPlayers[3].name : "Peter", team: .two)
                             .environmentObject(gameViewModel2)
                     }
                 }
@@ -44,10 +44,12 @@ struct GameView: View {
     }
     
     
+    
     // MARK: - Variables
     
     @StateObject private var gameViewModel1 = GameViewModel()
     @StateObject private var gameViewModel2 = GameViewModel()
+    @EnvironmentObject private var playerViewModel: PlayerViewModel
     let gameMode: GameMode
     
 }
@@ -55,5 +57,6 @@ struct GameView: View {
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
         GameView(gameMode: .vs2)
+            .environmentObject(PlayerViewModel())
     }
 }
