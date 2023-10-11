@@ -64,6 +64,7 @@ struct RuleView: View {
             }
             .navigationTitle(Strings.rules)
             .scrollIndicators(.never)
+            .padding(.top)
         }
     }
     

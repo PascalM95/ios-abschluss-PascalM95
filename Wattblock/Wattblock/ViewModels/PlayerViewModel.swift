@@ -12,7 +12,6 @@ class PlayerViewModel: ObservableObject {
     
     init() {
         fetchPlayers()
-        sortPlayers()
     }
     
     
@@ -24,12 +23,13 @@ class PlayerViewModel: ObservableObject {
     @Published var selectedPlayers: [Player] = []
     
     
+    
     // MARK: - Functions
     
     func fetchPlayers() {
         players.removeAll()
         let database = Firestore.firestore()
-        let reference = database.collection("players")
+        let reference = database.collection("players").order(by: "name")
         reference.getDocuments { snapshot, error in
             guard error == nil else {
                 print(error!.localizedDescription)
@@ -66,10 +66,6 @@ class PlayerViewModel: ObservableObject {
         let database = Firestore.firestore()
         database.collection("players").document(id).delete()
         fetchPlayers()
-    }
-    
-    func sortPlayers() {
-        players.sort { $0.name < $1.name }
     }
     
     func togglePlayerSelection(_ player: Player, _ playerCount: Int) {

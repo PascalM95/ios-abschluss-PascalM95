@@ -11,7 +11,7 @@ import Foundation
 class WeatherViewModel: ObservableObject {
     
     init() {
-        
+        fetchData()
     }
     
     

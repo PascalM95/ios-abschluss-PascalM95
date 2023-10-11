@@ -26,13 +26,12 @@ struct HomeView: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: ChoosePlayerView(gameMode: $selectedGameMode, playerCount: 2).environmentObject(playerViewModel)) {
+                    NavigationLink(destination: ChoosePlayerView(gameMode: .vs1, playerCount: 2).environmentObject(playerViewModel)) {
                         OutlinedIconButton(icon: Illustrations.acorn, title: Strings.vs1)
                             .padding(.horizontal, Values.padding24)
                     }
                     
-                    
-                    NavigationLink(destination: ChoosePlayerView(gameMode: $selectedGameMode, playerCount: 4).environmentObject(playerViewModel)) {
+                    NavigationLink(destination: ChoosePlayerView(gameMode: .vs2, playerCount: 4).environmentObject(playerViewModel)) {
                         OutlinedIconButton(icon: Illustrations.grass, title: Strings.vs2)
                             .padding(.horizontal, Values.padding24)
                     }
@@ -47,9 +46,14 @@ struct HomeView: View {
                             .padding(.horizontal, Values.padding24)
                     }
                     
-                    NavigationLink(destination: RuleView()) {
+                    Button {
+                        isRuleViewPresented.toggle()
+                    } label: {
                         OutlinedIconButton(icon: Illustrations.acorn, title: Strings.rules)
                             .padding(.horizontal, Values.padding24)
+                    }
+                    .sheet(isPresented: $isRuleViewPresented) {
+                        RuleView()
                     }
                     
                     Spacer()
@@ -65,7 +69,7 @@ struct HomeView: View {
     
     @EnvironmentObject private var userViewModel: UserViewModel
     @StateObject private var playerViewModel = PlayerViewModel()
-    @State private var selectedGameMode: GameMode = .vs1
+    @State private var isRuleViewPresented = false
     
 }
 

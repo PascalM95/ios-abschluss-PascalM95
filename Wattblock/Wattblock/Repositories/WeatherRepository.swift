@@ -15,7 +15,7 @@ class WeatherRepository {
         
         var searchString: String {
             if search.isEmpty {
-                return "Berlin"
+                return "Rachelsbach"
             } else {
                 return "\(search)"
             }
@@ -29,4 +29,5 @@ class WeatherRepository {
         
         return try JSONDecoder().decode(Weather.self, from: data)
     }
+    
 }

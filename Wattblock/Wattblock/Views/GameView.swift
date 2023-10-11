@@ -44,18 +44,19 @@ struct GameView: View {
     }
     
     
+    
     // MARK: - Variables
     
     @StateObject private var gameViewModel1 = GameViewModel()
     @StateObject private var gameViewModel2 = GameViewModel()
     @EnvironmentObject private var playerViewModel: PlayerViewModel
-    @Binding var gameMode: GameMode
+    let gameMode: GameMode
     
 }
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView(gameMode: .constant(.vs2))
+        GameView(gameMode: .vs2)
             .environmentObject(PlayerViewModel())
     }
 }

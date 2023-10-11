@@ -22,28 +22,40 @@ struct WeatherView: View {
                 
                 VStack {
                     if weatherViewModel.search.isEmpty {
-                        Text("Wetter in Berlin:")
+                        Text("Wetter in Rachelsbach:")
                             .font(Fonts.title1)
                             .bold()
+                            .foregroundStyle(.white)
                     } else {
                         Text("Wetter in \(weatherViewModel.search)")
                             .font(Fonts.title1)
                             .bold()
+                            .foregroundStyle(.white)
                     }
                     
                     Spacer()
                     
-                    Text("Temperatur: \(weatherViewModel.weather.main.temp, specifier: "%.1f") °C")
-                        .font(Fonts.headline)
-                        .padding()
+                    VStack {
+                        Text("Temperatur: \(weatherViewModel.weather.main.temp, specifier: "%.1f") °C")
+                            .font(Fonts.headline)
+                            .padding()
+                            .foregroundStyle(.white)
+                        
+                        Text("Gefühlt: \(weatherViewModel.weather.main.feels_like, specifier: "%.1f") °C")
+                            .font(Fonts.headline)
+                            .padding()
+                            .foregroundStyle(.white)
+                        
+                        Text("Luftfeuchtigkeit: \(weatherViewModel.weather.main.humidity) %")
+                            .font(Fonts.headline)
+                            .padding()
+                            .foregroundStyle(.white)
+                    }
+                    .frame(minWidth: 0)
+                    .background(.black.opacity(0.4))
+                    .clipShape(.rect(cornerRadius: Values.cornerRadius))
                     
-                    Text("Gefühlt: \(weatherViewModel.weather.main.feels_like, specifier: "%.1f") °C")
-                        .font(Fonts.headline)
-                        .padding()
                     
-                    Text("Luftfeuchtigkeit: \(weatherViewModel.weather.main.humidity) %")
-                        .font(Fonts.headline)
-                        .padding()
                     
                     Spacer()
                     Spacer()
@@ -52,9 +64,6 @@ struct WeatherView: View {
                 .onSubmit(of: .search) {
                     weatherViewModel.fetchData()
                 }
-                .onAppear(perform: {
-                    weatherViewModel.fetchData()
-                })
                 .padding()
             }
         }
